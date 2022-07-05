@@ -6,8 +6,10 @@
     --secondary: #1A75FF;
     --bawaan-gradient-1:rgb(240,65,255); /*Base Color*/
     --bawaan-gradient-2: rgb(119,57,163); /*Text Color*/
+    --bawaan-gradient-3: rgb(11,10,60);
     --gradient-1: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130,165,234,1) 100%);
     --gradient-2: linear-gradient(90deg, rgba(119,57,163,1) 0%, rgba(26,117,255,1) 100%);
+    --gradient-3: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
     --white: #fff;
     --black: #000;
     --grey: #C4C4C4;
@@ -31,6 +33,8 @@ body{
     display: block;
     font-family: var(--font-family-body) !important;
     overflow-x: hidden;
+    background: var(--bawaan-gradient-3);
+    background: var(--gradient-3);
 }
 
 /*Navbar CSS*/
@@ -222,7 +226,44 @@ body{
 }
 
 /*Navbar mobile alias footbar CSS*/
+.footer-bar{
+    background:var(--bawaan-gradient-1);
+    background: var(--gradient-1);
+}
 
+.footer-bar{
+    background-color: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-bar li{
+    padding: 0;
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    align-items: center;
+}
+
+.footer-bar a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--white) !important;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 931px) {
+    #mobile-footer-bar, #mobile-footer-bar .container-fluid{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1300px) {
     #id-pplk{
@@ -255,17 +296,55 @@ body{
         right: 0 /* rtl:ignore */;
         left: auto /* rtl:ignore */;
     }
+
+    .footer-bar{
+        z-index: 98;
+        background-color: var(--page-background-1);
+        bottom: 0;
+        position: fixed;
+        overflow: hidden;
+        height: 75px;
+        border-radius: 20px 20px 0 0;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: inline-flex;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px 16px rgb(0 0 0 / 10%);
+    }
+
+    .footer-bar li{
+        padding: 0;
+        width: 50px;
+        height: 30px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        display: grid;
+        align-items: center;
+    }
+
+    .footer-bar a{
+        text-decoration: none;
+        text-align: center;
+        color: var(--white) !important;
+        font-size: 10px;
+    }  
 }
 
 @media screen and (max-width:570px) {
     #search-width{
         width: 12rem;
     }
+    
 }
 
 @media screen and (max-width:370px) {
     #search-width{
-        width: 11rem;
+        width: 11.2rem;
     }
 }
 

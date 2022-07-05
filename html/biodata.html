@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/biodata.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+
+    <title>PROFILE PAGE</title>
+</head>
+<body>
+    <! -- Dekstop Navbar -->
+    <div class="header">
+        <nav id="navbar">
+            <img src="../assets/Logo-PPLK.png" class="logo">
+            <ul id="menu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Biodata</a></li>
+                <li><a href="#">Tugas</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <! -- Body -->
+    <div class="body">
+        <div class="btn-biodata d-flex justify-content-between">
+            <div class="btn-settings-back">
+              <i class="size bi bi-caret-left"></i>
+            </div>
+            <div class="settings-profile">
+                <i class="size bi bi-gear"></i>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-md-6 col-sm-10">
+                    <div class="center">
+                        <img class="profile" src="../assets/jhonnysins.png" width="150px" height="150px">
+                      <h2>Jhonny Sins Basara</h2>
+                      <p>120140999</p>
+                      <p>Kelompok 12</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="text">
+                            Program Studi
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text">
+                            Email
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text">
+                            Alamat
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text">
+                            Nomor Telepon
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text">
+                            Golongan Darah
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text">
+                            Riwayat Penyakit
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text" alt="Instagram">
+                            Instagram
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 ">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm-2 imgUp">
+                          <div class="imagePreview"></div>
+                      <label class="btn btn-primary">
+                        Show QR Code<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                        </label>
+                        </div><!-- col-2 -->
+                       </div><!-- row -->
+                      </div><!-- container -->
+                </div>
+            </div>
+            <div class="row ps-5 ms-2">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src = "../js/biodata.js"></script>
+</body>
+</html>

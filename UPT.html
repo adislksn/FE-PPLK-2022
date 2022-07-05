@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPT Itera</title>
+
+    <!-- b5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <!-- owl caorusel -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- css lokal -->
+    <link rel="stylesheet" href="style/UPT.css">
+</head>
+
+<body>
+    <!-- jumbotron -->
+    <div class="jumbotron  ratio ratio-16x9 my-auto">
+        <h1 class="text-center text-light">UPT ITERA</h1>
+    </div>
+
+    <!-- konten -->
+    <div class="container-fluid">
+        <div class="row">
+            <h2 class="text-center">UPT ITERA</h2>
+        </div>
+        <div class="row">
+            <div class="carousel owl-carousel" id="prestasi">
+                <div class="card card-1 prestas-himpunan-card">
+                    A
+                </div>
+                <div class="card card-2 prestas-himpunan-card">
+                    B
+                </div>
+                <div class="card card-3 prestas-himpunan-card">
+                    C
+                </div>
+                <div class="card card-4 prestas-himpunan-card">
+                    D
+                </div>
+                <div class="card card-5 prestas-himpunan-card">
+                    E
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

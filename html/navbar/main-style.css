@@ -30,7 +30,6 @@ body{
     padding: 0;
     display: block;
     font-family: var(--font-family-body) !important;
-    overflow-x: hidden;
 }
 
 /*Navbar CSS*/

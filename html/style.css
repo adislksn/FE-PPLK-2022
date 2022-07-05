@@ -33,27 +33,34 @@ body {
     padding-bottom: 6rem;
 }
 
-#jumbotron{
+.landing-page{
+    aspect-ratio: 16/9;
+    height: 50rem;
     background-image: url(assets/media/pplk.png);
     background-size: cover;
     background-position: 65% 0%;
 }
-.box{
-    aspect-ratio: 16/9;
-    height: 991px;
-}
+
 .gambar{
     max-width: 35rem;
     position: relative;
     top: 25%;
 }
+
 .name{
     font-weight: bold;
     color: var(--white);
 }
+
+.under-landing-page, .fun-fact, .begalin{
+    background: rgb(11,10,60);
+    background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
+}
+
 .card{
     width: 18rem;
     height: 21rem;
+    padding-top: 2.3rem;
     border-radius: 25px;
 }
 
@@ -125,9 +132,6 @@ body {
     box-shadow: 0px 5px 10px 1px rgb(138 139 140 / 18%);
 }
 
-.fun-fact{
-    background-color: var(--primary);
-}
 .canvas{
     width: 100%;
 }
@@ -146,7 +150,7 @@ body {
     border-radius: 25px;
     background: var(--primary);
     opacity: 0.5;
-    box-shadow: #000000 0px 0px 15px;
+    box-shadow: #000000 0px 0px 10px;
 }
 
 .item{
@@ -158,30 +162,91 @@ body {
     z-index: 999;
 
 }
+.begalin-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--primary);
+}
+
+.begalin-card{
+    height: 20rem;
+    border-radius: 20px;
+    background-color: var(--primary);
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .owl-dot{
+    margin-bottom: 20px!important;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background: white!important;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+  }
+  .owl-dot.active,
+  .owl-dot:hover{
+    background: #0072bc!important;
+    transform: scale(1.3);
+  }
+
+  .medpart{
+    padding-top: 7rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--primary);
+  }
+  .card-medpart{
+    width: 20px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: white;
+}
 
 @media screen and (max-width: 570px) {
-    .box{
+    .landing-page{
         aspect-ratio: 1/1;
-        height: 24rem;
+        height: 23rem;
     }
-
     .under-landing-page{
         display: none;
     }
     .carousel-card{
         padding: 6px 0px;
         height: 9rem;
+        box-shadow: #000000 0px 0px 7px;
     }
     .carousel-contaner{
         height: 12rem;
     }
 
     .maskot {
+        height: 1px;
         display: none;
     }
     
 }
-@media screen and (max-width: 987px) {
+@media screen and (max-width: 1400px) {
+    .card{
+        width: 12rem;
+        height: 15rem;
+        padding-top: 0;
+        border-radius: 25px;
+    }
+    .gambar-1 {
+        max-width: 100px;
+    }
+
+    .link-tilte{
+        font-size: 2rem;
+        font-weight: bold;
+        transform: translateY(0px);
+    }
     
     .carousel-card{
         padding: 6px 0px;
@@ -190,9 +255,12 @@ body {
     .carousel-contaner{
         height: 12rem;
     }
+    /* .maskot-awal{
+        padding-top: 20px;
+    } */
 
     .maskot {
-        height: 25rem;
+        height: 30rem;
     }
     
 }

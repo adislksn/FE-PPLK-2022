@@ -8,23 +8,22 @@
     <title>Prodi page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/prodi page.css">
-
+    <link rel="stylesheet" href="style/style.css">
     <!-- owl caorusel -->
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 
 <body>
-    <h1 class="text-center display-2 py-4"><strong>nama prodi</strong></h1>
+    <!-- Nama Prodi -->
+    <h1 class="text-center text-light display-1 py-4 fw-bold"><strong>nama prodi</strong></h1>
 
-    <div class="container-fluid">
-        <!-- gambar -->
-        <div class="row">
-            <img id="img-prodi" class="img-fluid h-50 mx-auto" src="assets/Logo_Mockup_125.jpg" alt="">
-        </div>
+    <!-- gambar -->
+    <img id="img-prodi" class="img-fluid h-50" src="assets/Logo_Mockup_125.jpg" alt="">
 
-        <!-- tentang kami, visi, misi -->
-        <div class="row text-center pt-4">
+    <!-- tentang kami, visi, misi -->
+    <div class="container">
+        <div class="row text-center pt-4 text-light">
             <h3>tentang kami</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, hic adipisci fuga ipsa at, illo
                 provident
@@ -44,72 +43,29 @@
                 Itaque totam aperiam ab quia delectus, veniam asperiores vel officia ex nostrum fugiat, hic
                 adipisci ut harum fugit. Eius aliquam dicta a tenetur autem placeat reprehenderit commodi
                 quod eos quis.</p>
-            <h3>Prestasi</h3>
         </div>
+    </div>
 
-        <!-- owl-carousel -->
-        <div class="row">
-            <div class="carousel owl-carousel">
-                <div class="card rounded-5 m-5" style="width: 20rem;">
-                    <div class="d-flex justify-content-center box">
-                        <div class="ratio ratio-1x1 box-img;">
-                            <img src="../../../ukm-ormawa/assets/2-2.jpeg" class="card-img p-2" alt="...">
-                        </div>
-                    </div>
-                    <div class="card-body pb-5">
-                        <h5 class="card-title">Nama Singkat Himpunan</h5>
-                        <p class="card-text">Nama Lengkap Himpunan</p>
-                    </div>
-                    <button href="#" class="tombol gradien-color">detail</button>
-                </div>
-
-                <div class="card rounded-5 m-5" style="width: 20rem;">
-                    <div class="d-flex justify-content-center box">
-                        <div class="ratio ratio-1x1 box-img;">
-                            <img src="../../../ukm-ormawa/assets/2-2.jpeg" class="card-img p-2" alt="...">
-                        </div>
-                    </div>
-                    <div class="card-body pb-5">
-                        <h5 class="card-title">Nama Singkat Himpunan</h5>
-                        <p class="card-text">Nama Lengkap Himpunan</p>
-                    </div>
-                    <button href="#" class="tombol gradien-color">detail</button>
-                </div>
-                <div class="card rounded-5 m-5" style="width: 20rem;">
-                    <div class="d-flex justify-content-center box">
-                        <div class="ratio ratio-1x1 box-img;">
-                            <img src="../../../ukm-ormawa/assets/2-2.jpeg" class="card-img p-2" alt="...">
-                        </div>
-                    </div>
-                    <div class="card-body pb-5">
-                        <h5 class="card-title">Nama Singkat Himpunan</h5>
-                        <p class="card-text">Nama Lengkap Himpunan</p>
-                    </div>
-                    <button href="#" class="tombol gradien-color">detail</button>
-                </div>
-                <div class="card rounded-5 m-5" style="width: 20rem;">
-                    <div class="d-flex justify-content-center box">
-                        <div class="ratio ratio-1x1 box-img;">
-                            <img src="../../../ukm-ormawa/assets/2-2.jpeg" class="card-img p-2" alt="...">
-                        </div>
-                    </div>
-                    <div class="card-body pb-5">
-                        <h5 class="card-title">Nama Singkat Himpunan</h5>
-                        <p class="card-text">Nama Lengkap Himpunan</p>
-                    </div>
-                    <button href="#" class="tombol gradien-color">detail</button>
-                </div>
+    <div class="container justify-content-center">
+        <h3 class="text-center text-light">Prestasi</h3>
+        <div class="carousel owl-carousel justify-content-center">
+            <div class="card card-1 prestasi-card mx-auto" data-merge='3'>
+                A
+            </div>
+            <div class="card card-2 prestasi-card mx-auto" data-merge='3'>
+                B
+            </div>
+            <div class="card card-3 prestasi-card mx-auto" data-merge='3'>
+                C
+            </div>
+            <div class="card card-4 prestasi-card mx-auto" data-merge='3'>
+                D
+            </div>
+            <div class="card card-5 prestasi-card mx-auto" data-merge='3'>
+                E
             </div>
         </div>
     </div>
-
-    <!-- galeri program studi -->
-
-    </div>
-    </div>
-
-
-
 
     <!-- owl jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -117,11 +73,14 @@
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script>
         $(".carousel").owlCarousel({
-            margin: 20,
+            center: true,
             loop: true,
+            nav: true,
             autoplay: true,
             autoplayTimeout: 2000,
+            stagePadding: 50,
             autoplayHoverPause: true,
+            touchDrag: true,
             responsive: {
                 0: {
                     items: 1,
@@ -137,7 +96,7 @@
                 }
             }
         });
-    </script>>
+    </script>
 </body>
 
 </html>

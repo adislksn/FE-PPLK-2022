@@ -16,10 +16,34 @@
 .tombol:hover {
   transform: translate(0, -5px);
   color: #000;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.75);
 }
 
-.box {
-  height: 10rem;
-  width: 18rem;
+#pills-tab {
+  background: rgb(11, 10, 60);
+  background: linear-gradient(90deg, rgba(11, 10, 60, 1) 0%, rgba(50, 25, 67, 1) 100%);
+}
+
+#landingPageJurusan {
+  background-image: url(../assets/pplk.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.nav .nav-item .active {
+  background: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130, 165, 234, 1) 100%) !important;
+}
+
+#landingPageJurusan #pills-tabContent {
+  background: rgb(11, 10, 60) !important;
+  background: linear-gradient(90deg, rgba(11, 10, 60, 1) 0%, rgba(50, 25, 67, 1) 100%) !important;
+}
+
+.card {
+  background: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130, 165, 234, 1) 100%) !important;
+  width: 20rem;
+}
+
+#pills-tab .nav-item .nav-link {
+  height: 5rem;
 }

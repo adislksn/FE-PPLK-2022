@@ -159,4 +159,42 @@ body {
 
 }
 
+@media screen and (max-width: 570px) {
+    .box{
+        aspect-ratio: 1/1;
+        height: 24rem;
+    }
+
+    .under-landing-page{
+        display: none;
+    }
+    .carousel-card{
+        padding: 6px 0px;
+        height: 9rem;
+    }
+    .carousel-contaner{
+        height: 12rem;
+    }
+
+    .maskot {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 987px) {
+    
+    .carousel-card{
+        padding: 6px 0px;
+        height: 9rem;
+    }
+    .carousel-contaner{
+        height: 12rem;
+    }
+
+    .maskot {
+        height: 25rem;
+    }
+    
+}
+
 

@@ -1,0 +1,232 @@
+@media (min-width: 300px) {
+    .main-landing-page {
+        width: auto;
+        height: 441px;
+    }
+
+    .games-display {
+        margin-left: 45%;
+        margin-top: 293px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-landing-page {
+        width: auto;
+        height: 684px;
+    }
+
+    .games-display {
+        margin-left: 40%;
+        margin-top: 27%;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 87px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    
+        color: #FFFFFF;
+    }
+}
+
+.content-bg {
+    background: linear-gradient(90deg, #0B0A3C 1.56%, #321943 100%);
+}
+
+.main-landing-page {
+    background-image: url("../assets/img/jumbotron-games.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.games-display {
+    position: absolute;
+}
+
+.btn {
+    width: 31%;
+    height: 18%;
+
+    margin-top: 41%;;
+    margin-left: 0.6%;
+    padding-top: 1.8%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 250%;
+    line-height: 68px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    background: linear-gradient(90deg, rgba(240, 65, 255, 0.9) 0%, #82A5EA 100%);
+    border-radius: 35px;
+}
+
+.games-menu-container {
+    padding-top: 78px;
+    margin-left: 164px;
+    margin-bottom: 66.04px;
+}
+
+.games-title {
+    margin-right: 100.37px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 350%;
+    line-height: 102px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.games-title a {
+    background: linear-gradient(90deg, rgba(240, 65, 255, 0.765) 0%, rgba(130, 165, 234, 0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.card {
+    background: linear-gradient(90deg, rgba(130, 165, 234, 0.85) 0%, rgba(240, 65, 255, 0.765) 100%);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card-user-info {
+    /* 1366px */
+    margin-top: 63px;
+    width: 90%;
+    height: 24.46%;
+    padding-top: 20px;
+    padding-left: 36.31px;
+    padding-bottom: 8.3px;
+}
+
+.col-logo {
+    /* 1366px */
+    position: absolute;
+    width: 235.65px;
+    height: 186.61px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    
+    padding-top: 43px;
+    padding-left: 22px;
+
+}
+
+.col-logo-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 364%;
+    line-height: 87px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+
+.user-info-name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140%;
+    line-height: 116.68%;
+    text-align: left;
+    /* or 47px */
+
+    color: #FFFFFF;
+}
+
+.user-info-name a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 116.68%;
+    text-align: left;
+    /* or 75px */
+
+
+    /* BG1 */
+
+    color: #FFFFFF;
+}
+
+.col-points {
+    position: absolute;
+    width: 250.66px;
+    height: 80.65px;
+    margin-top: calc(213.3px - 32px);
+    margin-left: calc(1008.25px - calc(12.7px + 22.44px));
+    padding-top: 12.06px;
+    padding-bottom: 12.06px;
+    padding-left: 13.09px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.points-title {
+    margin-left: calc(101.01px - 19.37px);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 116.68%;
+    text-align: left;
+    /* or 28px */
+
+    /* Bodytext */
+
+    color: #686868;
+}
+
+.points-value {
+    margin-left: calc(101.01px - 19.37px);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 3%;
+    text-align: left;
+    /* or 28px */
+
+
+    /* Call to Action 1 */
+
+    color: #3991C9;
+}
+
+.points-icon {
+    position: absolute;
+    width: 60px;
+    height: 56.53px;
+
+    background: orange;
+    border-radius: 50%;
+}

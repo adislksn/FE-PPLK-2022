@@ -1,4 +1,5 @@
 function onScanSuccess(qrCodeMessage) {
+  console.log(qrCodeMessage);
   document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
 }
 function onScanError(errorMessage) {

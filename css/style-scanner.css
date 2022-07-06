@@ -224,12 +224,13 @@ body{
 }
 
 /*Navbar mobile alias footbar CSS*/
-/* body{
+body{
     font-size: 10rem;
     font-family: var(--font-family-body);
     color: var(--font-color-secondary);
-} */
+}
 
+/* QR CODE STYLE */
     .qr-code {
         margin: 2rem;
         background: var(--bawaan-gradient-1);
@@ -239,18 +240,18 @@ body{
         display: flex ;
         border-radius: 0.2rem;
     }
-    .row {
+    .row-scanner {
         display: flex;
         align-self: center;
     }
-    .col-top {
+    .col-top-scanner {
         padding-top: 2rem;
         display: flex;
         background-position: center;
         color: var(--font-color-primary-2);
         font-weight: 700;
     }
-    .col {
+    .col-scanner {
         padding: 5rem;
         padding-bottom: 5rem;
         display: flex;
@@ -258,11 +259,11 @@ body{
     #reader {
         width: 500px;
     }
-    .col2 {
+    .col-2-scanner {
         display: flex;
         font-weight: 700;
     }
-    .col3 {
+    .col-3-scanner {
         padding-bottom: 2rem;
         display: flex;
     }
@@ -286,11 +287,12 @@ body{
         text-decoration: none;
     }
     .tombol_submit:hover {
-        background-color: var(--primary);
+        background: rgb(11,10,60);
+        background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
         color: var(--white);
         padding: 0.5rem;
         margin-bottom: 2rem;
-        font-weight: 800;
+        font-weight: 700;
         width: 31rem;
         border-radius: 0.2rem;
         display: flex;
@@ -300,6 +302,9 @@ body{
 @media screen and (max-width: 768px) {
     #reader {
         width: 300px;
+    }
+    .result {
+        width: 20rem;
     }
     .tombol_submit {
         width: 10rem;
@@ -364,5 +369,9 @@ body{
 @media screen and (max-width:340px) {
     #search-width{
         display: none;
+    }
+    #reader {
+        max-width: 180px;
+        justify-content: center;
     }
 }

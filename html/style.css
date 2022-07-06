@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
     --primary: #7739A3;
@@ -24,9 +25,9 @@
     --page-background-2: #f6f6f6;
 }
 
-body {
+/* body {
     padding-bottom: 100rem;
-}
+} */
 
 .padding-top-bottom {
     padding-top: 5rem;
@@ -39,6 +40,21 @@ body {
     background-image: url(assets/media/pplk.png);
     background-size: cover;
     background-position: 65% 0%;
+}
+
+.box{
+    width: 35%;
+}
+
+.text-nama {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: lemon;
+}
+
+.text-qoute {
+    font-size: 1.2rem;
+    transform: translateY(-20px);
 }
 
 .gambar{
@@ -58,7 +74,7 @@ body {
 }
 
 .card{
-    width: 18rem;
+    width: 19rem;
     height: 21rem;
     padding-top: 2.3rem;
     border-radius: 25px;
@@ -100,7 +116,7 @@ body {
 }
 
 
-.scrolling-wrapper-flexbox-mini {
+.flexbox-mini {
     width: 100%;
     display: inline-flex;
     flex-direction: row;
@@ -130,6 +146,15 @@ body {
     font-size: 16px;
     font-weight: 600;
     box-shadow: 0px 5px 10px 1px rgb(138 139 140 / 18%);
+}
+
+.text-link{
+    background: var(--bawaan-gradient-1);
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .under-landing-page-mobile{
@@ -246,11 +271,41 @@ body {
         aspect-ratio: 1/1;
         height: 23rem;
     }
+
+    .box{
+        width: 65%;
+    }
     .under-landing-page{
         display: none;
     }
+
+    .card{
+        width: 10rem!important;
+        height: 12rem!important;
+        padding-top: 0;
+        border-radius: 25px;
+    }
+    .gambar-1 {
+        margin: 10px;
+        max-width: 80px;
+    }
+
     .under-landing-page-mobile{
         display: block;
+    }
+    .scrolling-wrapper-flexbox-mini{
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        place-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .small-slide-menu-item {
+        width: 100%;
     }
 
     .link-tilte{

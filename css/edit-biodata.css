@@ -248,6 +248,7 @@ body{
 .container {
     width: 100%;
     padding: 15px 0 20px 0;
+    margin-bottom: 10px;
     border-radius: 15px;
     color: var(--black);
     font-weight: bold;

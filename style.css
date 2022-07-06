@@ -50,6 +50,7 @@ body{
 .card-text{
     font-family: sans-serif;
     color: white;
+    text-align: left;
 }
 .box{
     height: 10rem;
@@ -101,15 +102,52 @@ body{
 .himpunan {
 padding:0 3%;
 }
+.himpunan-2 {
+    padding:0 3%;
+}
+
+#box-in{
+    background-color: var(--gradient-1);
+    background-color: var(--bawaan-gradient-1);
+    align-items: center;
+}
+#code{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.text-1{
+    text-align: left;
+}
 img{
     display: block;
     margin: 0 auto;
 }
+#icon{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    background-color:transparent;
+    height: 330px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+}
+
 p{
     line-height: 1em;
     text-align: center;
     color: #fff !important;
     font-size: large;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h5{
+    line-height: 1em;
+    text-align: center;
+    color: #fff !important;
+    font-size: large;
+    padding-left: 5%;
+    padding-right: 10%;
 }
 h3 {
     line-height: 1em;
@@ -161,14 +199,15 @@ h2{
     position: relative;
     z-index: 1;
     width: 320px;
-    padding-right: 30px;
+    padding-right: 40px;
     padding-left: 30px;
-    border: 10px solid gray;
+    border: 20px solid gray;
     text-align: center;
     margin: 0 20px;
     
     
 }
+
 .details h2{
     font-size: 22px;
     text-transform: uppercase;
@@ -314,6 +353,7 @@ h2{
     left: 0.5em;
     margin-right: -50%;
 }
+
 @media (max-width: 1200px){
     .card-body{
         background-color: var(--gradient-2);
@@ -345,5 +385,12 @@ h2{
         font-weight: 520;
         margin-bottom: 3%;
         /* margin-top: 2%; */
+    }
+    p{
+        /* line-height: -1em; */
+        text-align:left;
+        color: #fff !important;
+        font-size:medium;
+
     }
 }

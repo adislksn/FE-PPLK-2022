@@ -12,13 +12,30 @@
   background-position: center;
 }
 
-.nav-items {
-  padding: 3px;
+#pills-tab {
+  background: rgb(11, 10, 60);
+  background: linear-gradient(90deg, rgba(11, 10, 60, 1) 0%, rgba(50, 25, 67, 1) 100%);
 }
 
-.nav .nav-item .active {
+#pills-tab .nav-item .active {
   background: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130, 165, 234, 1) 100%) !important;
 }
-#pills-tab .nav-item .nav-link {
-  height: 5rem;
+.btn .card {
+  background: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130, 165, 234, 1) 100%) !important;
+  width: 20rem;
+}
+
+.dashboard-item-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .dashboard-item-icon {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+  }
+  #pills-tab .nav-item .nav-link {
+    height: 10rem;
+  }
 }

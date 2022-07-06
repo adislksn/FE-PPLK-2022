@@ -30,8 +30,8 @@
             <h2 class="text-center px-5 py-5 text-light">UPT ITERA</h2>
         </div>
         <div class="row">
-            <div class="carousel owl-carousel" id="prestasi">
-                <div class="card card-1 prestas-himpunan-card">
+            <div class="carousel owl-carousel justify-content-center" id="upt-carousel">
+                <div class="card card-1 upt-card text-light p-3 mx-auto" data-merge="3">
                     <h3 class="text-center my-4">lorem</h3>
                     <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum natus
                         corrupti voluptates
@@ -41,7 +41,7 @@
                         consequatur laborum doloremque magnam deleniti nesciunt, ut molestias similique unde aut nulla
                         ab quisquam voluptatibus eaque molestiae sit voluptas!</p>
                 </div>
-                <div class="card card-2 prestas-himpunan-card">
+                <div class="card card-2 upt-card text-light p-3 mx-auto" data-merge="3">
                     <h3 class="text-center my-4">lorem</h3>
                     <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum natus
                         corrupti voluptates
@@ -51,7 +51,7 @@
                         consequatur laborum doloremque magnam deleniti nesciunt, ut molestias similique unde aut nulla
                         ab quisquam voluptatibus eaque molestiae sit voluptas!</p>
                 </div>
-                <div class="card card-3 prestas-himpunan-card">
+                <div class="card card-3 upt-card text-light p-3 mx-auto" data-merge="3">
                     <h3 class="text-center my-4">lorem</h3>
                     <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum natus
                         corrupti voluptates
@@ -61,7 +61,7 @@
                         consequatur laborum doloremque magnam deleniti nesciunt, ut molestias similique unde aut nulla
                         ab quisquam voluptatibus eaque molestiae sit voluptas!</p>
                 </div>
-                <div class="card card-4 prestas-himpunan-card">
+                <div class="card card-4 upt-card text-light p-3 mx-auto" data-merge="3">
                     <h3 class="text-center my-4">lorem</h3>
                     <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum natus
                         corrupti voluptates
@@ -71,7 +71,7 @@
                         consequatur laborum doloremque magnam deleniti nesciunt, ut molestias similique unde aut nulla
                         ab quisquam voluptatibus eaque molestiae sit voluptas!</p>
                 </div>
-                <div class="card card-5 prestas-himpunan-card">
+                <div class="card card-5 upt-card text-light p-3 mx-auto" data-merge="3">
                     <h3 class="text-center my-4">lorem</h3>
                     <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum natus
                         corrupti voluptates
@@ -95,22 +95,24 @@
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script>
         $(".carousel").owlCarousel({
-            margin: 20,
             loop: true,
+            center: true,
             autoplay: true,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
+            stagePadding: 180,
             responsive: {
                 0: {
                     items: 1,
                     nav: false,
+                    stagePadding: 0,
                 },
                 600: {
-                    items: 2,
-                    nav: false
+                    items: 1,
+                    nav: false,
                 },
                 1000: {
-                    items: 3,
+                    items: 1,
                     nav: false
                 }
             }

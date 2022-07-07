@@ -42,6 +42,11 @@
     --page-background-2: #f6f6f6;
 }
 
+html{
+    background: var(--gradient-3);
+    background: var(--bawaan-gradient-3);
+}
+
 body {
 	font-family: var(--font-family-body) !important;
 }
@@ -51,8 +56,12 @@ body {
     padding:0px 0px !important;
 }
 .brand-link .pplk-logo{
-    width:2rem;
-    height:2rem;
+    width:3.5rem;
+    height:3.5rem;
+}
+
+#logo-dan-judul{
+    padding: 0px 0px !important;
 }
 
 #judul-pplk{
@@ -67,6 +76,20 @@ body {
     font-size: 0.8rem;
     font-weight: bold;
     color: var(--font-color-primary);
+}
+
+/* Left Sidebar*/
+#left-sidebar{
+    background: var(--bawaan-gradient-3);
+    background: var(--gradient-3);
+}
+.mt-2 .nav .nav-item .active{
+    background:var(--bawaan-gradient-2) !important;
+    background: var(--gradient-2) !important;
+}
+
+.nav-treeview .nav-item .active p{
+    color: white;
 }
 
 @media screen and (max-width:290px) {

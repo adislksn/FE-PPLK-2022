@@ -29,6 +29,11 @@
     padding-bottom: 100rem;
 } */
 
+.modal-dialog .modal-content{
+    border-radius: 25px!important;
+    background-color: var(--page-background-2);
+}
+
 .padding-top-bottom {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -235,21 +240,7 @@
     color: var(--white);
     text-align: center;
 }
-/* .owl-nav{
-    margin: auto;
-}
-.owl-nav .owl-prev{
-    background: var(--white);
-    border-radius: 50%;
-    width: 40rem;
-    height: 40rem;
-    font-size: 40rem;
-    position: absolute;
-    margin-left: 40px;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-} */
+
 
 .owl-theme .owl-nav i{ 
     font-size: 2rem;
@@ -273,7 +264,7 @@
 
 .owl-dots{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 5px;
   }
 .owl-dot{
     margin-bottom: 20px!important;

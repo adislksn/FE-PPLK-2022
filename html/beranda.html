@@ -22,6 +22,20 @@
 
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <script>
+        $("#myModal").on('hidden.bs.modal', function (e) {
+            $("#myModal .modal-dialog");
+        // $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+        });
+
+        $(document).ready(function(){
+            $("#modal-sponsor").modal('show');
+        });
+
+        
+            
+    </script>
 </head>
 <body>
     <!-- Desktop Navabar top -->
@@ -149,6 +163,50 @@
         </div>
     </div>
     <!--Content web mulai dari sini-->
+
+    <!-- sponsor modal -->
+    <div class="modal fade" id="modal-sponsor" tabindex="-1" aria-labelledby="sponsor-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="sponsor-modal">Modal title</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="modal-carousel owl-carousel">
+                                <div class="modal-carousel-item justify-content-center w-100">
+                                    <div class="ratio ratio-1x1">
+                                        <img src="../assets/media/alley 5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal-carousel-item justify-content-center w-100">
+                                    <div class="ratio ratio-1x1">
+                                        <img src="../assets/media/alley 5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="modal-carousel-item justify-content-center w-100">
+                                    <div class="ratio ratio-1x1">
+                                        <img src="../assets/media/alley 5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+            <!-- <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div> 
+    <!-- end sponsor modal -->
     <div class="conten">
         <!-- jumbotron -->
         <div class="container-fluid landing-page">
@@ -471,32 +529,13 @@
                         <div class="begalin-content">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque unde accusamus velit suscipit vel impedit magnam! Debitis consectetur commodi, esse distinctio dignissimos, accusantium, fuga quod eius porro cum ullam odio saepe! Unde, ducimus iusto earum ut itaque ipsum. Recusandae laboriosam quis sit, magni quia itaque est beatae?</p>
                             
-                            <button type="button" class="btn btn-primary mx-auto my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-primary mx-auto my-4" data-bs-toggle="modal" data-bs-target="#myModal">
                                 View More
                               </button>
-                            <!-- modal begalin -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                    ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Understood</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div> 
-                            <!-- end modal begalin -->  
+                            </div>
                         </div>
-                    </div>
-                    <div class="-begalin-card">
-                        <div class="begalin-content">
+                        <div class="-begalin-card">
+                            <div class="begalin-content">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque unde accusamus velit suscipit vel impedit magnam! Debitis consectetur commodi, esse distinctio dignissimos, accusantium, fuga quod eius porro cum ullam odio saepe! Unde, ducimus iusto earum ut itaque ipsum. Recusandae laboriosam quis sit, magni quia itaque est beatae?</p>
                         </div>
                     </div>
@@ -518,7 +557,51 @@
                 </div>  
             </div>
         </div>
-               
+        
+        <!-- modal begalin -->
+        <div class="modal modal-xl fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-modal text-start m-2">
+                        <p>4 jenis rumah adat lampung beserta faktanya 
+                            Rumah adat lampung dibagi menjadi 4 jenis yaitu adalah : 
+                            Rumah Nuwou Balak / Sesat Balai agung : rumah ini digunakan untuk melakukan berbagai macam kegiatan adat Lampung. Rumah ini juga terbagi menjadi beberapa ruang dengan fungsi yang berbeda yaitu adalah : 
+                            Ijan Geladak : ruang ini berfungsi sebagai ruang untuk menyambut tamu-tamu adat penting, dan tamu tersebut akan disambut dengan tarian khas Ijan Geladak. 
+                            Anjungan : Ruangan ini digunakan untuk menyambut tamu penting setelah Ijan Geladak. Ruang ini mempunyai fungsi lain yaitu adalah tempat bermusyawar dan beristirahat bagi petinggi-petinggi adat. 
+                            Ruang Paseban : Ruang ini berfungsi sebagai ruang utama dari Rumah Sesat Balai Agung ini.
+                            Ruang Tetabuhan Lampung : Ruangan ini digunakan untuk menyimpan berbagai alat musik lampung yang berupa gamelan dan tetabuhan ala khas Lampung.
+                            Ruang Gajah Merem : Sama hal nya dengan Anjungan, ruangan ini juga difungsikan untuk bermusyawarah. 
+                            Rumah Adat Nuwou Balak : Rumah ini menganut adat pepadun. Rumah nuwou ini juga disebut dengan Balai Keratun yang pada dasarnya dihuni oleh para petinggi dan kepala adat. Rumah ini juga terbagi menjadi beberapa ruang dengan fungsi yang berbeda yaitu adalah : 
+                            Lawang Kuri : Ruang ini difungsikan untuk menerima tamu juga merupakan titik temu adat.
+                            Lapang Agung : Ruangan ini difungsikan untuk berkumpulnya para hawa.
+                            Kebik Temen / Kebik Kerumpu : Ruangan ini difungsikan untuk kamar tifur anak tertua atau penyimbang bumi. 
+                            Kebik Rengek : Sebagai kamar tidur anak kedua / anak penyimbang ratu
+                            Kebik Tengah : Sebagai kamar tidur anak ketiga / penyimbang batin. 
+                            Rumah Adat lamban Balak : Rumah ini menyerupai Nuwou balak berupa rumah panggung. Untuk bagian dari ruangannya sendiri terdapat Jan, Lepau, Lapang Luakh, Lapang Lom, Bilik Kebik, Tebelayakh, Sekhudu, Panggakh, Dapokh, Gakhang, Bah Lamban. 
+                            Rumah adat Lamban Pesagi : Rumah ini memiliki ciri khas yaitu terdapat tiang-tiang penyangga yang berukuran lebih besar, ciri lainnya yang membedakan rumah adat ini dengan 3 rumah adat sebelumnya adalah lumbung padi yang dibangun terpisah dari rumah utama.</p>
+                    </div>
+
+                ...
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <!-- Tagline PPLK 2022 -->
+                    <!-- Copyright href ke page Our Team -->
+                    <div class="text-start">
+                        <strong >Copyright &copy; 2022 <a href="#" class=" text-decoration-none">IMTEK PPLK-2022</a>.</strong> All rights reserved.
+                    </div>
+
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button> -->
+                </div>
+            </div>
+            </div>
+        </div> 
+        <!-- end modal begalin -->  
 
         <!-- medpatr -->
         <div class="container-fluid medpart padding-top-bottom">
@@ -564,6 +647,19 @@
         
     </div>
         <script>
+            $(".modal-carousel").owlCarousel({
+            item:1,
+            items:1,
+            margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: true,
+         });
+
+
             $(".mobile-wrapper").owlCarousel({
             center: false,
             items:2,
@@ -609,6 +705,9 @@
             items:1,
             margin: 10,
             loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
             nav: true,
             navText: [
                 "<i class='bi bi-caret-left-fill'></i>",

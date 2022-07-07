@@ -271,7 +271,7 @@
 }
 
 
-/* .owl-dots{
+.owl-dots{
     text-align: center;
     margin-top: 40px;
   }
@@ -281,6 +281,7 @@
     width: 15px;
     margin: 0 5px;
     background: white!important;
+    border: #000000 1px solid !important;
     border-radius: 14px;
     transition: all 0.3s ease;
   }
@@ -289,7 +290,7 @@
     background: var(--bawaan-gradient-1)!important;
     background: var(--gradient-1)!important;
     transform: scale(1.3);
-  } */
+  }
 
 
 

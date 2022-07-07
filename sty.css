@@ -24,15 +24,11 @@
     --page-background-2: #f6f6f6;
     
 }
-
 body{
-    /* background-color: var(--bawaan-gradient-2); */
     padding-bottom: 500px;
     background: rgb(11,10,60);
     background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
 }
-
-
 .card{
     background-color: rgba(255, 255, 255, 0.212)!important;
     border-color: #ffffff6c!important;
@@ -40,13 +36,11 @@ body{
     border-radius: 30px!important;
     width: 20rem;
 }
-
 .card-title{
     font-family:"poppins";
     font-weight: bold;
     color: white;
 }
-
 .card-text{
     font-family: sans-serif;
     color: white;
@@ -62,7 +56,6 @@ body{
     object-fit: cover;
     object-position: 50% 0%;
 }
-
 .tombol{
     position: inherit;
     border: none;
@@ -78,7 +71,6 @@ body{
     bottom: -15px;
     text-align: center;
 }
-
 .tombol{
     position: inherit;
     border: none;
@@ -126,8 +118,7 @@ h2{
     padding-left: 30px;
     border: 10px solid gray;
     text-align: center;
-    margin: 0;
-    
+    margin: 0;   
 }
 .details h2{
     font-size: 22px;
@@ -138,7 +129,6 @@ h2{
     font-size: 16px;
     color: #fff;
 }
-
 .booklet{
     width: 100%;
 

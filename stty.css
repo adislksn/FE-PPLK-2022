@@ -23,8 +23,7 @@
     --font-color-secondary: #686868;
     --font-color-call-to-act-2:#4a4a4a;
     --page-background-1: #F9FAFB;
-    --page-background-2: #f6f6f6;
-    
+    --page-background-2: #f6f6f6; 
 }
 *{
   margin: 0;
@@ -32,13 +31,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* body{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EFEFEF;
-} */
 .slide-container{
   max-width: 1120px;
   width: 100%;

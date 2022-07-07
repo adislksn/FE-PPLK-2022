@@ -285,10 +285,14 @@ body{
 .container a{
     display: flex;
     margin: auto;
-    background-color: var(--grey);
+    background-color: rgba(255, 255, 255, 0.212)!important;
+    border-color: #ffffffff!important;
+    box-shadow: #ffffff6c 0px 20px 60px!important;
+    color: #000000;
     width: 23.75rem;
     height: 23.75rem;
     border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 
@@ -314,15 +318,19 @@ body p{
     padding: 0 13px 0 13px;
     height: 23.75rem;
     width: 23.75rem;
-    background-color: var(--grey);
     background-size: auto ;
     border-radius: 15px;
     text-align: center;
     margin: auto;
-    color: #000000;
     font-size: 0.875rem;
     font-weight: 600;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.212)!important;
+    border-color: #ffffff6c!important;
+    box-shadow: #ffffff6c 0px 20px 20px 10px!important;
+}
+
+.card p{
+    color: var(--black);
 }
 
 .owl-dots{
@@ -349,7 +357,9 @@ body p{
 
 .ratio{
     margin: 1.875rem 4.875rem 1.875rem 4.875rem;
-    background-color: #ffffff;
+    background: rgb(240,65,255);
+    background: linear-gradient(90deg, rgba(240,65,255,0.4962359943977591) 0%, rgba(130,165,234,0.5) 100%);
+    border-radius: 15px;
 }
 
 

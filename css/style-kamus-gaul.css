@@ -229,39 +229,32 @@ body{
     font-family: var(--font-family-body);
     color: var(--font-color-secondary);
 }
-
 .kamus-gaul_pplk {
     margin: 0;
     padding: 0;
     color: var(--font-color-primary-2)
 }
-
 .container {
     padding-top: 3rem;
     width: max-content;
     text-align: center;
 }
-
-
 .card{
     /* border-color: #ffffff6c!important; */
-    margin: 40px;
+    margin: 2rem;
 }
-
 .card:hover {
-    box-shadow: #ffffff6c 0px 20px 60px!important;
+    box-shadow: #ffffff6c 0rem 1rem 4rem!important;
 }
-
 .box{
-    height: 200px;
-    width: 250px;
+    height: 14rem;
+    width: 14rem;
     background: var(--bawaan-gradient-1)!important;
     background: var(--gradient-1)!important;
     border-radius: 1rem;
 }
-
 .kata-kamus {
-    padding: 80px;
+    padding: 6rem;
     font-size: larger;
     font-weight: bold;
     color: var(--white);
@@ -270,111 +263,329 @@ body{
 .kata-kamus:hover {
     color: var(--primary-color-1);
 }
-
-/* #btn-kamus {
-    height: 200px;
-    width: 250px;
-    background: var(--bawaan-gradient-1)!important;
-    background: var(--gradient-1)!important;
-    border-radius: 1rem;
-    justify-content: center;
-    text-align: center;
-} */
-/* #btn-kamus a {
-    color: #fff;
-    text-decoration: none;
-    padding-top: 80px;
-} */
-#popup {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    visibility: hidden;
+#popup-1 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
 }
-#popup:hover{
-    background: rgba(0, 0, 0, 0.5);
-}
+#popup-1:hover{ background: rgba(0, 0, 0, 0.5); }
 
 #popup-2 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    visibility: hidden;
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
 }
 #popup-2:hover{
     background: rgba(0, 0, 0, 0.5);
 }
-.window {
-    width: 400px;
-    max-height: 400px;
-    background: var(--grey);
-    border-radius: 10px;
-    position: relative;
-    padding: 10px;
-    text-align: center;
-    margin: 15% auto;
+#popup-3 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
 }
-.window2 {
-    width: 400px;
-    max-height: 400px;
+#popup-3:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-4 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-4:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-5 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-5:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-6 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-6:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-7 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-7:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-8 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-8:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-9 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-9:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-10 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-10:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-11 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-11:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-12 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-12:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-13 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-13:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-14 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-14:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-15 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-15:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-16 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-16:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-17 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-17:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-18 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-18:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-19 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-19:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-20 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-20:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-21 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-21:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-22 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-22:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-23 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-23:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-24 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-24:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-25 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-25:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-26 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-26:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+#popup-27 {
+    width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    z-index: 999; visibility: hidden;
+}
+#popup-27:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.window {
+    width: 24rem;
+    max-height: 40rem;
     background: var(--grey);
-    border-radius: 10px;
+    border-radius: 1rem;
     position: relative;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
     margin: 15% auto;
 }
 .window h2 {
-    margin: 30px 0 0 0;
+    margin: 2rem 0 0 0;
     color: var(--font-color-subheadline);
 }
 .window h6 {
-    margin: 30px 0 0 0;
+    margin: 2rem 0 0 0;
     color: var(--font-color-subheadline);
 }
 .contoh-penggunaan {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 .close-button {
-    width: 50px;
-    height: 10px;
+    width: 3rem;
+    height: 1rem;
     display: block;
     text-align: center;
     color: var(--font-color-subheadline);
     position: absolute;
-    top: 10px;
-    right: -5px;
+    top: 0.5rem;
+    right: 0rem;
 }
 .fa-circle-xmark {
-    size: 50px;
+    size: 5rem;
 }
 
-#popup:target {
+#popup-1:target {
+    visibility: visible;
+}
+#popup-2:target {
+    visibility: visible;
+}
+#popup-3:target {
+    visibility: visible;
+}
+#popup-4:target {
+    visibility: visible;
+}
+#popup-5:target {
+    visibility: visible;
+}
+#popup-6:target {
+    visibility: visible;
+}
+#popup-7:target {
+    visibility: visible;
+}
+#popup-8:target {
+    visibility: visible;
+}
+#popup-9:target {
+    visibility: visible;
+}
+#popup-10:target {
+    visibility: visible;
+}
+#popup-11:target {
+    visibility: visible;
+}
+#popup-12:target {
+    visibility: visible;
+}
+#popup-13:target {
+    visibility: visible;
+}
+#popup-14:target {
+    visibility: visible;
+}
+#popup-15:target {
+    visibility: visible;
+}
+#popup-16:target {
+    visibility: visible;
+}
+#popup-17:target {
+    visibility: visible;
+}
+#popup-18:target {
+    visibility: visible;
+}
+#popup-19:target {
+    visibility: visible;
+}
+#popup-20:target {
+    visibility: visible;
+}
+#popup-21:target {
+    visibility: visible;
+}
+#popup-22:target {
+    visibility: visible;
+}
+#popup-23:target {
+    visibility: visible;
+}
+#popup-24:target {
+    visibility: visible;
+}
+#popup-25:target {
+    visibility: visible;
+}
+#popup-26:target {
+    visibility: visible;
+}
+#popup-27:target {
     visibility: visible;
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        margin: 10px;
+        margin: 1.2rem;
+        overflow-x: hidden;
     }
-
     .box  {
-        height: 150px;
-        width: 150px;
+        height: 8rem;
+        width: 8rem;
+        overflow-x: hidden;
     }
     .kata-kamus {
-        padding-top: 60px;
+        padding: 3rem;
         font-size: medium;
+        font-weight: 500;
     }
     .window {
-        width: 250px;
-        margin-top: 200px;
+        width: 20rem;
+        margin-top: 16rem;
     }
 }
 

@@ -27,16 +27,6 @@
 }
 
 
-body{
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
-    display: block;
-    font-family: var(--font-family-body) !important;
-    overflow-x: hidden;
-    background: var(--bawaan-gradient-3);
-    background: var(--gradient-3);
-}
 
 /*Navbar CSS*/
 .background-gradient{
@@ -259,7 +249,19 @@ body{
     font-size: 10px;
 }
 
-/* BODY PPLK */
+/* BODY PPLK  PAGE*/
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.875rem;
+    display: block;
+    font-family: var(--font-family-body) !important;
+    overflow-x: hidden;
+    background: url(../assets/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .PPLK{
     height: fit-content;
     width: 100%;
@@ -284,8 +286,8 @@ body{
     display: flex;
     margin: auto;
     background-color: var(--grey);
-    width: 380px;
-    height: 380px;
+    width: 23.75rem;
+    height: 23.75rem;
     border-radius: 15px;
 }
 
@@ -298,7 +300,7 @@ body p{
 
 .wrapper {
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 3rem;
 }
 
 .wrapper .carousel {
@@ -310,15 +312,15 @@ body p{
 
 .carousel .card{
     padding: 0 13px 0 13px;
-    height: 380px;
-    width: 380px;
+    height: 23.75rem;
+    width: 23.75rem;
     background-color: var(--grey);
     background-size: auto ;
     border-radius: 15px;
     text-align: center;
     margin: auto;
     color: #000000;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
@@ -346,9 +348,7 @@ body p{
 }
 
 .ratio{
-    margin: 30px 78px 30px 78px;
-    width: 150px;
-    height: 200px;
+    margin: 1.875rem 4.875rem 1.875rem 4.875rem;
     background-color: #ffffff;
 }
 
@@ -380,6 +380,25 @@ body p{
     .profile-img, .profile-img img{
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: fit-content;
+        font-size: 1rem;
+    }
+
+    .container a {
+        width: 19rem;
+        height: 19rem;
+    }
+    
+    .carousel .card {
+        width: 19rem;
+        height: 19rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -428,7 +447,42 @@ body p{
         text-align: center;
         color: var(--white) !important;
         font-size: 10px;
-    }  
+    } 
+
+}
+
+@media screen and (max-width: 820px){
+    .container {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    body {
+        padding-bottom: 3.75rem;
+    }
+
+    .container{
+        font-size: 1.25rem;
+    }
+
+    .container a {
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    
+    .carousel .card {
+        width: 18.75rem;
+        height: 18.75rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .ratio{
+        margin: 1.5rem 4rem 1.5rem 4rem;
+    }
 }
 
 @media screen and (max-width:570px) {
@@ -436,21 +490,29 @@ body p{
         width: 12rem;
     }
 
+    body{
+        padding-bottom: 5rem;
+    }
+
     .container {
-        font-size: 12px;
+        width: fit-content;
+        font-size: 0.9rem;
     }
 
     .container a {
-        width: 300px;
-        height: 300px;
+        width: 18.75rem;
+        height: 18.75rem;
     }
     
     .carousel .card {
-        width: 300px;
-        height: 300px;
-        font-size: 12px;
-        padding: 0 0 0 0;
-        font-weight: 500;
+        width: 18.75rem;
+        height: 18.75rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .ratio {
+        margin: 1.5rem 4.2rem 1.5rem 4.2rem;
     }
     
 }
@@ -459,11 +521,44 @@ body p{
     #search-width{
         width: 11.2rem;
     }
+    
+    .container {
+        width: 60%;
+        font-size: 0.8rem;
+    }
+    
+    .container a {
+        width: 14rem;
+        height: 14rem;
+    }
+    
+    .carousel .card {
+        width: 14rem;
+        height: 14rem;
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+    
+    .ratio{
+        margin: 1rem 3rem 1rem 3rem;
+    }
+    
 }
 
 @media screen and (max-width:340px) {
     #search-width{
         display: none;
+    }
+
+}
+
+@media (min-width: 911px) and (max-width: 912px) {
+    body{
+        background-size: 150% 150%;
+    }
+
+    .container{
+        font-size: 1.25rem;
     }
 }
 

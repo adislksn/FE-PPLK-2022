@@ -27,16 +27,6 @@
 }
 
 
-body{
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
-    display: block;
-    font-family: var(--font-family-body) !important;
-    overflow-x: hidden;
-    background: var(--bawaan-gradient-3);
-    background: var(--gradient-3);
-}
 
 /*Navbar CSS*/
 .background-gradient{
@@ -259,7 +249,17 @@ body{
     font-size: 10px;
 }
 
+/*Content Page CSS*/
+
 body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: var(--font-family-body) !important;
+    overflow-x: hidden;
+    background: url(../assets/background.png);
+    background-position: center;
+    background-size: cover;
     font-size: 10rem;
     font-family: var(--font-family-body);
     color: var(--font-color-secondary);
@@ -284,9 +284,7 @@ body{
 }
 
 .box{
-    height: 300px;
-    width: 300px;
-
+    width: 18.75rem;
 }
 
 @media screen and (min-width: 931px) {
@@ -362,7 +360,11 @@ body{
         text-align: center;
         color: var(--white) !important;
         font-size: 10px;
-    }  
+    } 
+    
+    body{
+        padding-bottom: 5rem;
+    }
 }
 
 @media screen and (max-width:570px) {
@@ -370,9 +372,12 @@ body{
         width: 12rem;
     }
 
+    body{
+        padding-bottom: 4.5rem;
+    }
+
     .box{
-        height: 280px;
-        width: 280px;
+        width: 17.5rem;
     }
     
 }
@@ -380,6 +385,14 @@ body{
 @media screen and (max-width:370px) {
     #search-width{
         width: 11.2rem;
+    }
+
+    body{
+        padding-bottom: 4rem;
+    }
+
+    .box{
+        width: 15.625rem;
     }
 }
 
@@ -389,3 +402,9 @@ body{
     }
 }
 
+@media screen and (max-width:280px) {
+    .box{
+        width: 10rem;
+    }
+
+}

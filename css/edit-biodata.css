@@ -27,16 +27,6 @@
 }
 
 
-body{
-    margin: 0;
-    padding: 0;
-    padding-bottom: 50px;
-    display: block;
-    font-family: var(--font-family-body) !important;
-    overflow-x: hidden;
-    background: var(--bawaan-gradient-3);
-    background: var(--gradient-3);
-}
 
 /*Navbar CSS*/
 .background-gradient{
@@ -259,6 +249,20 @@ body{
     font-size: 10px;
 }
 
+/*Content PAGE CSS*/
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    display: block;
+    font-family: var(--font-family-body) !important;
+    overflow-x: hidden;
+    background: url(../assets/background.png);
+    background-position: center;
+    background-size: cover; 
+}
+
 .body {
     padding-top: 70px;
     color: var(--font-color-primary-2);
@@ -293,22 +297,19 @@ body{
 }
 
 .imagePreview {
-    padding-top: 20px;
-    width: 350px;
-    height: 350px;
-    /* align-items: center;
-    background-position: center center; */
+    padding: 5rem;
+    align-items: center;
+    background-position: center center; 
     background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
-    background-color:#fff;
+    background-color:#ffffff;
     background-size: cover;
     background-repeat:no-repeat;
-    display: inline-flex;
     box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
 }
 
 .btn-primary{
     border-radius: 50%;
-    width: 20rem;
+    width: 60%;
     height: 3rem;
     display:block;
     box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
@@ -424,6 +425,10 @@ body{
         color: var(--white) !important;
         font-size: 10px;
     }  
+
+    body{
+        padding-bottom: 8rem;
+    }
 }
 
 @media screen and (max-width:570px) {

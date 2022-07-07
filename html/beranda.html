@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- Desktop Navabar top -->
@@ -346,7 +349,7 @@
                                 <path d="M75.4349 70.5674H55.9714C54.6276 70.5674 53.5391 71.6611 53.5391 72.9997C53.5391 74.3382 54.6276 75.432 55.9714 75.432H75.4349C76.7786 75.432 77.8724 74.3382 77.8724 72.9997C77.8724 71.6611 76.7786 70.5674 75.4349 70.5674Z" fill="black"/>
                                 <path d="M90.0365 70.5674H85.1667C83.8281 70.5674 82.7344 71.6611 82.7344 72.9997C82.7344 74.3382 83.8281 75.432 85.1667 75.432H90.0365C91.375 75.432 92.4688 74.3382 92.4688 72.9997C92.4688 71.6611 91.375 70.5674 90.0365 70.5674Z" fill="black"/>
                                 <path d="M68.1354 36.4998H73C74.3385 36.4998 75.4323 35.4061 75.4323 34.0675C75.4323 32.729 74.3385 31.6353 73 31.6353H68.1354C66.7917 31.6353 65.7031 32.729 65.7031 34.0675C65.7031 35.4061 66.7917 36.4998 68.1354 36.4998Z" fill="black"/>
-                                </svg>
+                            </svg>
                                 
                             
                             <h1 class="link-tilte">PRODI</h1>
@@ -463,10 +466,33 @@
                     <p>BEGALIN</p>
                     <p class="akronim-begalin">BELAJAR GALI INFORMASI</p>
                 </div>
-                <div class="begalin-wraper owl-carousel">
+                <div class="begalin-wraper owl-carousel owl-theme">
                     <div class="-begalin-card">
                         <div class="begalin-content">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloremque unde accusamus velit suscipit vel impedit magnam! Debitis consectetur commodi, esse distinctio dignissimos, accusantium, fuga quod eius porro cum ullam odio saepe! Unde, ducimus iusto earum ut itaque ipsum. Recusandae laboriosam quis sit, magni quia itaque est beatae?</p>
+                            
+                            <button type="button" class="btn btn-primary mx-auto my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                View More
+                              </button>
+                            <!-- modal begalin -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div> 
+                            <!-- end modal begalin -->  
                         </div>
                     </div>
                     <div class="-begalin-card">
@@ -492,6 +518,7 @@
                 </div>  
             </div>
         </div>
+               
 
         <!-- medpatr -->
         <div class="container-fluid medpart padding-top-bottom">
@@ -537,17 +564,6 @@
         
     </div>
         <script>
-
-        function myFunction() {
-            if (window.matchMedia("(max-width:570px").matches) { // If media query matches
-                return 35; 
-            }
-            else if (window.matchMedia("(max-width:1200px").matches) { // If media query matches
-                return 60; 
-            } else {
-                return 100;
-            }
-        }
             $(".mobile-wrapper").owlCarousel({
             center: false,
             items:2,
@@ -569,19 +585,23 @@
         
 
             $(".carousel-contaner").owlCarousel({
-           loop: true,
-           autoplay: true,
-           autoplayTimeout: 2000,
-           autoplayHoverPause: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
             touchDrag: true,
-           responsive: {
-             0:{
-               items:1,
-               stagePadding: myFunction(),
-               nav: false,
-               dots: 0,
-             },
-           }
+            nav: false,
+            dots: 0,
+            items:1,
+            responsive: {
+                0:{
+                stagePadding:35,
+                },  
+                1200:{
+                stagePadding:100,
+                },
+            }
+
          });
 
          $(".begalin-wraper").owlCarousel({
@@ -589,7 +609,12 @@
             items:1,
             margin: 10,
             loop: true,
-            nav: false
+            nav: true,
+            navText: [
+                "<i class='bi bi-caret-left-fill'></i>",
+                "<i class='bi bi-caret-right-fill'></i>",
+            ],
+            dots:0,
          });
 
          $(".carousel").owlCarousel({

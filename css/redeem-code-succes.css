@@ -52,6 +52,7 @@ body, .redeem {
 }
 .poin-container{
     background: white;
+    border: var(--bawaan-gradient-1) solid 2px;
     padding: 5px;
     height: 5rem;
     width: 5rem;

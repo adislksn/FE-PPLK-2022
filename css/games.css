@@ -37,13 +37,13 @@
         line-height: 87px;
         text-align: center;
         letter-spacing: 0.1em;
-    
+
         color: #FFFFFF;
     }
 }
 
 .content-bg {
-    background: linear-gradient(90deg, #0B0A3C 1.56%, #321943 100%);
+    background: linear-gradient(90deg, #321943 0%, #0B0A3C 100%);
 }
 
 .main-landing-page {
@@ -58,11 +58,12 @@
     position: absolute;
 }
 
-.btn {
+.btn-get-started {
     width: 31%;
     height: 18%;
 
-    margin-top: 41%;;
+    margin-top: 41%;
+    ;
     margin-left: 0.6%;
     padding-top: 1.8%;
     font-family: 'Open Sans';
@@ -82,12 +83,10 @@
 .games-menu-container {
     padding-top: 78px;
     margin-left: 164px;
-    margin-bottom: 66.04px;
+    margin-bottom: 52.21px;
 }
 
 .games-title {
-    margin-right: 100.37px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
@@ -97,6 +96,10 @@
     text-align: center;
 
     color: #FFFFFF;
+}
+
+.games-title {
+    margin-right: 100.37px;
 }
 
 .games-title a {
@@ -110,13 +113,15 @@
 .card {
     background: linear-gradient(90deg, rgba(130, 165, 234, 0.85) 0%, rgba(240, 65, 255, 0.765) 100%);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
 }
 
 .card-user-info {
     /* 1366px */
     margin-top: 63px;
+    margin-bottom: 31.19px;
     width: 90%;
-    height: 24.46%;
+    height: 247.86px;
     padding-top: 20px;
     padding-left: 36.31px;
     padding-bottom: 8.3px;
@@ -131,7 +136,7 @@
     background: #FFFFFF;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    
+
     padding-top: 43px;
     padding-left: 22px;
 
@@ -147,6 +152,12 @@
     letter-spacing: 0.1em;
 
     color: #000000;
+}
+
+.user-info {
+    /* 1366px */
+    margin-left: calc(302px - 36.31px);
+    margin-top: 14.78px;
 }
 
 .user-info-name {
@@ -165,7 +176,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 204%;
     line-height: 116.68%;
     text-align: left;
     /* or 75px */
@@ -178,10 +189,10 @@
 
 .col-points {
     position: absolute;
-    width: 250.66px;
-    height: 80.65px;
-    margin-top: calc(213.3px - 32px);
-    margin-left: calc(1008.25px - calc(12.7px + 22.44px));
+    width: 17%;
+    height: 32%;
+    margin-top: calc(158.61px - 20px);
+    margin-left: calc(857.03px - calc(10.03px + 17.73px));
     padding-top: 12.06px;
     padding-bottom: 12.06px;
     padding-left: 13.09px;
@@ -192,11 +203,11 @@
 }
 
 .points-title {
-    margin-left: calc(101.01px - 19.37px);
+    margin-left: calc(81.01px - 19.37px);
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 112%;
     line-height: 116.68%;
     text-align: left;
     /* or 28px */
@@ -207,11 +218,11 @@
 }
 
 .points-value {
-    margin-left: calc(101.01px - 19.37px);
+    margin-left: calc(81.01px - 19.37px);
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 96%;
     line-height: 3%;
     text-align: left;
     /* or 28px */
@@ -224,9 +235,242 @@
 
 .points-icon {
     position: absolute;
-    width: 60px;
-    height: 56.53px;
+    width: 30%;
+    height: 70%;
 
     background: orange;
     border-radius: 50%;
+}
+
+.card-game-menu {
+    margin-left: 31.19px;
+}
+
+.card-game {
+    width: 41.82%;
+    height: 200px;
+}
+
+.game1 {
+    background: white;
+    text-align: left;
+
+    padding-top: 38.17px;
+    padding-right: 30.5px;
+}
+
+.game1-figure {
+    width: 25px;
+    height: 25px;
+
+    color: gray;
+    border-radius: 25px;
+}
+
+.game1-title {
+    color: #174461;
+    margin-left: 179px;
+}
+
+.game1-desc {
+    color: #686868;
+    margin-left: 179px;
+}
+
+.game2 {
+    margin-left: 31.05px;
+    text-align: left;
+
+    padding-top: 38.17px;
+    padding-right: 30.5px;
+}
+
+.game2-title {
+    margin-left: 179px;
+}
+
+
+.game2-desc {
+    margin-left: 179px;
+}
+
+.leaderboard-container {
+    padding-top: 62.45px;
+    padding-bottom: 160px;
+    margin-left: 130.43px;
+}
+
+.leaderboarad-header-container {
+    padding-left: 361.27px;
+    margin-bottom: 41.11px;
+}
+
+.leaderboard-title {
+    margin-bottom: 31.62px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 350%;
+    line-height: 102px;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.leaderboard-underline {
+    width: 80px;
+    height: 8px;
+
+    border-radius: 20px;
+    background: #3991C9;
+
+    margin-left: 158.73px;
+}
+
+.top-rank-container {
+    padding-left: 24.23px;
+}
+
+.rank-img {
+    box-sizing: border-box;
+
+    width: 157.63px;
+    height: 157.63px;
+
+    border-radius: 50%;
+}
+
+.rank-col {
+    margin-right: 174.11px;
+}
+
+.rank1-img {
+    border: 2px solid #FFA941;
+}
+
+.rank2-img {
+    margin-top: 132.02px;
+    margin-left: 100px;
+    border: 2px solid #CBCBCB;
+}
+
+.rank3-img {
+    margin-top: 132.02px;
+    border: 2px solid #492D0A;
+}
+
+.sign-rank {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    color: white;
+    text-align: center;
+}
+
+.sign-rank1 {
+    margin-top: -15px;
+    margin-left: 63px;
+
+    background: #FFA941;
+}
+
+.sign-rank2 {
+    margin-top: -15px;
+    margin-left: 163px;
+
+    background: #D9D9D9;
+}
+
+.sign-rank3 {
+    margin-top: -15px;
+    margin-left: 63px;
+    background: #492D0A;
+}
+
+.top-rank-identity {
+    margin-top: 12.65px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+
+    /* identical to box height, or 42px */
+
+
+    color: #FFFFFF;
+}
+
+.top-rank-ordergroup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 116.68%;
+}
+
+.top-rank-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 116.68%;
+}
+
+.top-rank-points {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 116.68%;
+
+    color: #FFA941;
+}
+
+.ranking-title {
+    margin-left: -100px;
+    margin-bottom: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 116.68%;
+    /* or 47px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.rank-table-container {
+    width: 1095.66px;
+    height: auto;
+    padding-top: 15.9px;
+    padding-left: 21.34px;
+    padding-right: 21.34px;
+    padding-bottom: 47.7px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.list-rank-col {
+    width: auto;
+    height: auto;
+    padding-top: 9.87px;
+    padding-left: 36.36px;
+    margin-bottom: 19.75px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 116.68%;
+    /* or 37px */
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+.list-active {
+    border: 2.5px solid #3991C9;
 }

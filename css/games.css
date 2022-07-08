@@ -1,25 +1,3 @@
-@media (min-width: 300px) {
-    .main-landing-page {
-        width: auto;
-        height: 441px;
-    }
-
-    .games-display {
-        margin-left: 45%;
-        margin-top: 293px;
-
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 31px;
-        text-align: center;
-        letter-spacing: 0.1em;
-
-        color: #FFFFFF;
-    }
-}
-
 @media (min-width: 1200px) {
     .main-landing-page {
         width: auto;
@@ -47,7 +25,7 @@
 }
 
 .main-landing-page {
-    background-image: url("../assets/img/jumbotron-games.png");
+    background-image: url("../assets/jumbotron-games.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +41,6 @@
     height: 18%;
 
     margin-top: 41%;
-    ;
     margin-left: 0.6%;
     padding-top: 1.8%;
     font-family: 'Open Sans';
@@ -473,4 +450,394 @@
 
 .list-active {
     border: 2.5px solid #3991C9;
+}
+
+@media (max-width: 780px) {
+    .main-landing-page {
+        width: auto;
+        height: 88.2%;
+    }
+
+    .games-display {
+        margin-top: 44.45%;
+        margin-left: 30.67%;
+        margin-right: auto;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #FFFFFF;
+    }
+
+
+    .btn-get-started {
+        visibility: hidden !important;
+    }
+
+    .games-title {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0;
+        letter-spacing: 0;
+        visibility: hidden !important;
+    }
+
+    .games-menu-container {
+        padding-top: 0px;
+        margin-right: auto;
+        margin-left: 6.3%;
+        margin-bottom: 18px;
+    }
+
+    .card {
+        background: linear-gradient(90deg, rgba(240, 65, 255, 0.765) 0%, rgba(130, 165, 234, 0.85) 100%);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
+
+    .card-user-info {
+        margin-top: 0;
+        margin-bottom: 31.19px;
+        width: 90%;
+        height: 130px;
+        padding-top: 22px;
+        padding-left: 36.31px;
+        padding-bottom: 26px;
+    }
+
+    .col-logo {
+        width: 30%;
+        height: 71.3%;
+    }
+
+    .col-logo-text {
+        font-weight: 0;
+        font-size: 0;
+        line-height: 0px;
+        letter-spacing: 0;
+        visibility: hidden;
+    }
+
+    .user-info {
+        margin-left: calc(42.52% - 36.31px);
+        margin-top: 14.78px;
+    }
+
+    .user-info-name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 116.68%;
+    }
+
+    .user-info-name a {
+        font-size: 16px;
+    }
+
+    .col-points {
+        width: 100px;
+        margin-top: calc(18.61% - 20px);
+        margin-left: calc(75.74% - calc(10.03px + 17.73px));
+        padding-top: 2px;
+        padding-bottom: 12.06px;
+        padding-left: 9.67px;
+    }
+
+    .points-icon {
+        width: 30%;
+        height: 70%;
+        margin-top: 4px;
+
+        background: linear-gradient(90deg, rgba(130, 165, 234, 0.85) 0%, rgba(240, 65, 255, 0.765) 100%);
+    }
+
+    .points-title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 116.68%;
+
+        margin-top: 2px;
+        margin-left: 37.27px;
+
+        background: linear-gradient(90deg, rgba(130, 165, 234, 0.85) 0%, rgba(240, 65, 255, 0.765) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .points-value {
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 3%;
+
+        margin-left: 37.27px;
+        margin-bottom: 30px;
+    }
+
+
+    .card-game-menu {
+        margin-left: 0;
+    }
+
+    .card-game {
+        width: 88%;
+        height: 130px;
+    }
+
+    .game1 {
+        background: white;
+        text-align: left;
+
+        padding-top: 12px;
+        padding-right: 30.5px;
+        margin-bottom: 22px;
+    }
+
+    .game1-figure {
+        width: 25px;
+        height: 25px;
+
+        color: gray;
+        border-radius: 25px;
+    }
+
+    .game1-title {
+        margin-left: 113px;
+
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 116.68%;
+
+        background: linear-gradient(90deg, rgba(240, 65, 255, 0.765) 0%, rgba(130, 165, 234, 0.85) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .game1-desc {
+        margin-left: 82px;
+
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 116.68%;
+
+        background: linear-gradient(90deg, rgba(240, 65, 255, 0.765) 0%, rgba(130, 165, 234, 0.85) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .game2 {
+        margin-left: 0px;
+        text-align: left;
+
+        padding-top: 21px;
+        padding-right: 30.5px;
+    }
+
+    .game2-title {
+        color: #5BB3EC;
+        margin-left: 113px;
+
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 116.68%;
+    }
+
+
+    .game2-desc {
+        color: white;
+        margin-left: 82px;
+
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 116.68%;
+    }
+
+    .leaderboard-container {
+        padding-top: 18px;
+        padding-bottom: 83px;
+        margin-left: 27px;
+    }
+
+    .leaderboarad-header-container {
+        padding-left: 79px;
+        margin-bottom: 32px;
+    }
+
+    .leaderboard-title {
+        margin-bottom: 4px;
+
+        font-weight: 400;
+        font-size: 240%;
+        line-height: 102px;
+    }
+
+    .leaderboard-underline {
+        width: 37px;
+        height: 1px;
+
+        border-radius: 20px;
+        background: #F5F5F5;
+
+        margin-left: 111px;
+    }
+
+
+    .top-rank-container {
+        padding-left: 39px;
+    }
+
+    .rank-img {
+        box-sizing: border-box;
+
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+    }
+
+    .rank-col {
+        margin-right: 39px;
+    }
+
+    .rank1-img {
+        border: 2px solid #FFA941;
+    }
+
+    .rank2-img {
+        margin-top: 132.02px;
+        margin-left: 39px;
+        border: 2px solid #CBCBCB;
+    }
+
+    .rank3-img {
+        margin-top: 132.02px;
+        border: 2px solid #492D0A;
+    }
+
+    .sign-rank {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+
+        color: white;
+        text-align: center;
+    }
+
+    .sign-rank1 {
+        margin-top: -15px;
+        margin-left: 63px;
+
+        background: #FFA941;
+    }
+
+    .sign-rank2 {
+        margin-top: -15px;
+        margin-left: 163px;
+
+        background: #D9D9D9;
+    }
+
+    .sign-rank3 {
+        margin-top: -15px;
+        margin-left: 63px;
+        background: #492D0A;
+    }
+
+    .top-rank-identity {
+        margin-top: 12.65px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+
+        /* identical to box height, or 42px */
+
+
+        color: #FFFFFF;
+    }
+
+    .top-rank-ordergroup {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 116.68%;
+    }
+
+    .top-rank-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 116.68%;
+    }
+
+    .top-rank-points {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 116.68%;
+
+        color: #FFA941;
+    }
+
+    .ranking-title {
+        margin-left: -100px;
+        margin-bottom: 30px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 116.68%;
+        /* or 47px */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .rank-table-container {
+        width: 100%;
+        height: 100%;
+        padding-top: 15.9px;
+        padding-left: 21.34px;
+        padding-right: 21.34px;
+        padding-bottom: 8px;
+
+        background: #FAFAFA;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+
+    .list-rank-col {
+        width: auto;
+        height: auto;
+
+        margin-right: 24px;
+        padding-top: 9.87px;
+        padding-left: 36.36px;
+        margin-bottom: 19.75px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 116.68%;
+        /* or 37px */
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+
+    .list-active {
+        border: 2.5px solid #3991C9;
+    }
+
 }

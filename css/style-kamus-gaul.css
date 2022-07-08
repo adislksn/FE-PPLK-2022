@@ -647,4 +647,19 @@ body{
     #search-width{
         display: none;
     }
+    #btn-kamus {
+        margin: 0.5rem;
+    }
+    #box-kamus {
+        height: 7rem;
+        width: 7rem;
+    }
+    .kata-kamus {
+        font-size: small;
+        padding: 1rem;
+    }
+    #full-kamus {
+        width: 16rem;
+        max-height: 32rem;
+    }
 }

@@ -459,3 +459,10 @@ body {
   background: linear-gradient(90deg, rgba(240, 65, 255, 0.765) 0%, rgba(130, 165, 234, 0.85) 100%);
   font-family: "Open Sans", sans-serif;
 }
+
+.modal-exp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 100%);
+}

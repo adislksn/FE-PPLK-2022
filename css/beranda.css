@@ -25,9 +25,17 @@
     --page-background-2: #f6f6f6;
 }
 
-/* body {
-    padding-bottom: 100rem;
-} */
+body {
+    background-image: url(../assets/bacground-2.png);
+    background-size: cover;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 6rem;
+    box-shadow: inset rgba(41, 1, 53, 0.66) 0px 1000rem 100px;
+    width: 100%;
+    
+}
 
 .modal-dialog .modal-content{
     border-radius: 25px!important;
@@ -42,9 +50,11 @@
 .landing-page{
     aspect-ratio: 16/9;
     height: 30%;
-    background-image: url(../assets/media/pplk.png);
+    background-image: url(../assets/Rectangle.png);
     background-size: cover;
-    background-position: 65% 0%;
+    background-position: 50% 0%;
+    /* box-shadow:rgba(50,25,67,1) 0px 50px 10px; */
+    
 }
 
 .box{
@@ -74,10 +84,10 @@
     color: var(--white);
 }
 
-.under-landing-page, .under-landing-page-mobile, .fun-fact, .begalin, .medpart{
+/* .under-landing-page, .under-landing-page-mobile, .fun-fact, .begalin, .medpart{
     background: rgb(11,10,60);
     background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
-}
+} */
 
 .card{
     width: 100%;
@@ -111,6 +121,8 @@
 .card:hover, .small-slide-menu-item:hover {
     background: var(--bawaan-gradient-1);
     background: var(--gradient-1);
+    transform: translate(3px, -8px);
+    box-shadow: 0px 10px 10px white;
 }
 
 

@@ -24,11 +24,28 @@
     --page-background-2: #f6f6f6;
 }
 body{
-    padding-bottom: 80rem;
+    background-image: url(../assets/bacground-2.png);
+    background-size: cover;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 6rem;
+    box-shadow: inset rgba(41, 1, 53, 0.66) 0px 1000rem 100px;
+    width: 100%;
 }
-.landing-page, .card-list{
-    background: rgb(11,10,60);
-    background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
+.landing-page{
+    background-image: url(../assets/Rectangle.png);
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    /* min-height: 45rem; */
+    /* background-attachment: fixed; */
+    /* background: rgb(11,10,60);
+    background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%); */
+}
+
+.card-list{
+    transform: translateY(-12%);
 }
 .title-text{
     font-family: var(--font-family-title);
@@ -44,6 +61,10 @@ body{
     background: var(--bawaan-gradient-2);
     background: var(--gradient-2);
     margin-bottom: 2.5rem;
+}
+.text-conten{
+    width: 60%;
+    margin-bottom: 3rem;
 }
 .btn {
     border: none !important;
@@ -75,6 +96,17 @@ body{
 
 
 @media screen and (max-width: 700px) {
+    .landing-page{
+        min-height: auto;
+        padding-bottom: 4rem;
+    }
+    .text-conten{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .card-list{
+        transform: translateY(-4.5rem);
+    }
     .box{
         width: 50%!important;
     }

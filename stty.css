@@ -31,6 +31,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 .slide-container{
   max-width: 1120px;
   width: 100%;
@@ -118,7 +119,17 @@
 .swiper-pagination-bullet-active{
   background-color: #4070F4;
 }
-
+.card-content-gm{
+  max-width: 100%;
+}
+.slide_container_gambar .slide-container-gambar{
+  padding: 0 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.gambar_slider{
+padding: 50px 0;
+}
 @media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;

@@ -239,22 +239,24 @@ body{
     width: max-content;
     text-align: center;
 }
-.card{
+#btn-kamus{
     /* border-color: #ffffff6c!important; */
     margin: 2rem;
 }
-.card:hover {
+#btn-kamus:hover {
     box-shadow: #ffffff6c 0rem 1rem 4rem!important;
 }
-.box{
+#box-kamus{
     height: 14rem;
     width: 14rem;
     background: var(--bawaan-gradient-1)!important;
     background: var(--gradient-1)!important;
     border-radius: 1rem;
+    text-decoration: none;
 }
 .kata-kamus {
-    padding: 6rem;
+    align-items: center;
+    display: flex;
     font-size: larger;
     font-weight: bold;
     color: var(--white);
@@ -451,7 +453,7 @@ body{
 #popup-27:hover{
     background: rgba(0, 0, 0, 0.5);
 }
-.window {
+#full-kamus {
     width: 24rem;
     max-height: 40rem;
     background: var(--grey);
@@ -461,11 +463,11 @@ body{
     text-align: center;
     margin: 15% auto;
 }
-.window h2 {
+#full-kamus h2 {
     margin: 2rem 0 0 0;
     color: var(--font-color-subheadline);
 }
-.window h6 {
+#full-kamus h6 {
     margin: 2rem 0 0 0;
     color: var(--font-color-subheadline);
 }
@@ -569,11 +571,11 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-    .card {
+    #btn-kamus {
         margin: 1.2rem;
         overflow-x: hidden;
     }
-    .box  {
+    #box-kamus  {
         height: 8rem;
         width: 8rem;
         overflow-x: hidden;
@@ -583,7 +585,7 @@ body{
         font-size: medium;
         font-weight: 500;
     }
-    .window {
+    #full-kamus {
         width: 20rem;
         margin-top: 16rem;
     }

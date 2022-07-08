@@ -94,11 +94,18 @@ body, .redeem {
     #wave{
         opacity: 1;
     }
+    .pesan .jawaban{
+        font-weight: bold;
+    }
+    .pesan .jawaban, .text-pesan, .text-kelompok {
+        color: var(--white);
+    }
     .text-pesan, .text-kelompok{
-        text-shadow: #858484 0px 0px 5px;
+        text-shadow: #000000 0px 0px 5px;
     }
     .poin-card{
-        opacity: 0.7;
+        /* opacity: 0.7; */
+        box-shadow: inset #ffffff11 0px 100rem 20px ;
         background: var(--bawaan-gradient-2)!important;
     }
     .btn-redeem{

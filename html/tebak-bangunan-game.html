@@ -267,57 +267,89 @@
 
     <!--Content web mulai dari sini-->
     <div class="container-fluid bg-tb min-vh-100 pb-5 mb-5">
-        <div class="container pt-5">
-          <div class="row pt-5" style="height: 150px">
-            <div class="col-3 col-md-2 d-flex justify-content-start">
-              <i class="fa-solid navbar-bb fa-angle-left text-white rounded d-flex justify-content-center align-items-center"></i>
-            </div>
-            <div class="col-6 col-md-8 d-flex justify-content-center align-items-center">
-              <h1 class="text-white mb-5 judul-tb text-center">Tebak Bangunan</h1>
+      <div class="container pt-5">
+        <div class="row pt-5" style="height: 150px">
+          <div class="col-3 col-md-2 d-flex justify-content-start">
+            <i class="fa-solid navbar-bb fa-angle-left text-white rounded d-flex justify-content-center align-items-center"></i>
+          </div>
+          <div class="col-6 col-md-8 d-flex justify-content-center align-items-center">
+            <h1 class="text-white mb-5 judul-tb text-center">Tebak Bangunan</h1>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="card-border w-100 rounded-5">
+              <div class="card rounded-5 ap-cd w-100">
+                <img src="" alt="" class="card-img-top bg-secondary rounded-5 ratio ratio-16x9" />
+                <div class="card-body">
+                  <h3 class="card-title text-center text-white">Gambar 1</h3>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <div class="card-border w-100 rounded-5">
-                <div class="card rounded-5 ap-cd w-100">
-                  <img src="" alt="" class="card-img-top bg-secondary rounded-5 ratio ratio-16x9" />
-                  <div class="card-body">
-                    <h3 class="card-title text-center text-white">Gambar 1</h3>
+        </div>
+        <div class="row mt-2">
+          <div class="col d-flex justify-content-center align-items-start">
+            <h3 class="text-white my-4 judul-tb text-center">Pilihan :</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
+            <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
+            <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
+            <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
+            <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-2 col-sm-1 d-flex justify-content-center align-items-start p-0 my-2">
+            <button type="button" class="rounded d-flex align-items-center justify-content-center text-white w-100 pilih" data-bs-toggle="modal" data-bs-target="#tebakan">Pilih</button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="tebakan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog rounded-5">
+            <div class="modal-content rounded-5 d-flex align-items-center">
+              <button type="button" class="btn-close modal-exp border border-dark p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body text-center w-75">
+                <h1 class="my-5 pt-5 fw-bold">Tebakan Benar</h1>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                  College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                </p>
+                <p class="mb-5 pb-2">
+                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                  accompanied by English versions from the 1914 translation by H. Rackham.
+                </p>
+                <div class="container d-flex justify-content-center">
+                  <div class="row w-75">
+                    <div class="col-4 p-0">
+                      <img src="../assets/logo-pplk-minified.png" alt="logo-footer" class="d-inline w-100 mb-3" />
+                    </div>
+                    <div class="col-8 p-0 text-start d-flex align-items-center">
+                      <p class="mb-3 lh-1"><small>Copyright © 2016 UPT TIK - Institut Teknologi Sumatera (ITERA)</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-2">
-            <div class="col d-flex justify-content-center align-items-start">
-              <h3 class="text-white my-4 judul-tb text-center">Pilihan :</h3>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
-              <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
-              <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
-              <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-start p-0 my-2">
-              <button type="button" class="rounded border-0 b-rat p-0 d-flex align-items-center justify-content-center chc-1"><span class="chc-rest fs-3 fw-bold">Gedung E</span></button>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-2 col-sm-1 d-flex justify-content-center align-items-start p-0 my-2">
-              <button type="button" class="rounded d-flex align-items-center justify-content-center text-white w-100 pilih">Pilih</button>
-            </div>
-          </div>
-
+        </div>
+        Static backdrop
+      </div>
+    </div>
     <!--Content web selesai dari sini-->
     <script>
-        ScrollReveal().reveal(".ap-cd");
+      ScrollReveal().reveal(".ap-cd");
     </script>
 
     <script type="text/javascript">

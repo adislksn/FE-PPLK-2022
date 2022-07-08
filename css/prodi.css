@@ -37,15 +37,23 @@
   transform: translate(0, -10px);
   color: #000;
   box-shadow: 0 8px 12px rgba(255, 255, 255, 0.75);
-  font-size: larger;
+  /* font-size: larger; */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
+/*  */
 
 .rounded-5 {
   border-radius: 4rem;
 }
 .animasi-nav:hover {
-  transform: translate(0, -5px);
+  /* transform: translate(0, -5px); */
   font-size: larger;
+  margin: 0 0 0 0;
+}
+
+.animasi-nav{
+  margin: 0.5rem 0;
 }
 
 @media only screen and (max-width: 500px) {

@@ -121,8 +121,8 @@ body {
 .card:hover, .small-slide-menu-item:hover {
     background: var(--bawaan-gradient-1);
     background: var(--gradient-1);
-    transform: translate(3px, -8px);
-    box-shadow: 0px 10px 10px white;
+    transform: translate(0, -8px);
+    box-shadow: 0px 5px 10px white;
 }
 
 
@@ -173,6 +173,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     box-shadow: 0px 5px 10px 1px rgb(138 139 140 / 18%);
+    margin: 1rem 0 0.8rem 0;
 }
 
 .text-link{

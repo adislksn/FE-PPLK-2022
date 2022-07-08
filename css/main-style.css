@@ -26,7 +26,6 @@
     --page-background-2: #f6f6f6;
 }
 
-
 body{
     margin: 0;
     padding: 0;
@@ -38,6 +37,10 @@ body{
 }
 
 /*Navbar CSS*/
+#navbar-desktop, #navbar-desktop .container-fluid{
+    padding: 0px 0px;
+}
+
 .background-gradient{
     background: var(--bawaan-gradient-1);
     background: var(--gradient-1);
@@ -348,6 +351,10 @@ body{
         color: var(--white) !important;
         font-size: 10px;
     }  
+
+    footer{
+        display: none;
+    }
 }
 
 @media screen and (max-width:570px) {

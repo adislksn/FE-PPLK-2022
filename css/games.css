@@ -1,3 +1,14 @@
+body{
+    background-image: url(../assets/bacground-2.png);
+    background-size: cover;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 6rem;
+    box-shadow: inset rgba(41, 1, 53, 0.66) 0px 1000rem 100px;
+    width: 100%;
+}
+
 @media (min-width: 1200px) {
     .main-landing-page {
         width: auto;

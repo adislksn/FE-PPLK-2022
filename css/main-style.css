@@ -352,8 +352,8 @@ body{
         font-size: 10px;
     }  
 
-    footer{
-        display: none;
+    #footer-page{
+        display: none !important;
     }
 }
 

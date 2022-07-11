@@ -32,8 +32,6 @@ body{
     display: block;
     font-family: var(--font-family-body) !important;
     overflow-x: hidden;
-    background: var(--bawaan-gradient-3);
-    background: var(--gradient-3);
 }
 
 /*Navbar CSS*/

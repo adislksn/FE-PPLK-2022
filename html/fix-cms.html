@@ -517,10 +517,183 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
+    
+    <!--Create Data-->
+    <div class="col-lg-12 col-lg-12 form-wrapper">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Himpunan</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+        @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Nama Lengkap</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Nama Lengkap" name="namaLengkap" id="namaLengkap" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Nama Singkat</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Nama Singkat" name="namaSingkat" id="namaSingkat" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Pembina</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Pembina" name="pembina" id="pembina" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Ketua Himpunan</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Ketua Heimpunan" name="ketuaHimpunan" id="ketuaHimpunan"  >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Tahun Berdiri</label>
+            <div class="col-sm-9">
+              <input type="number" class="form-control" name="tahunBerdiri" id="tahunBerdiri"  >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Kode Warna</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Kode Warna" name="kodeWarna" id="kodeWarna"  >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Visi</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Visi" name="visi" id="visi" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Misi</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area misi" placeholder="Misi" name="misi" id="misi"  ></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Logo</label>
+            <div class="col-sm-9">
+              <input type="file" accept="image/*" class="form-control" name="logo" id="logo" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Filosofi Logo</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Filosofi Logo" name="filosofiLogo" id="filosofiLogo" >
+            </div>
+          </div>                                    
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Deskripsi</label>
+            <div class="col-sm-9 ">
+              <textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="deskripsi" id="deskripsi"  ></textarea>
+            </div>
+          </div>
+          <div class="accordion accordion-danger-solid" id="accordion-two">
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+  </div>
+    <!--./Create Data-->
+
+    <!--Read & Delete Data-->
     <div class="col-lg-12col-lg-12 form-wrapper">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Himpunan</h4>
+          <h4 class="card-title">Kelola Data Himpunan</h4>
+        </div>
+        <div class="card-body">
+          @if (session('sukses'))
+          <div class="alert alert-success">
+            {{ session('sukses') }}
+          </div>
+          @elseif (session('error'))
+          <div class="alert alert-danger">
+            {{ session('error') }}
+          </div>
+          @endif
+          <div class="table-responsive">
+            <table id="example4" class="display" style="min-width: 845px">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Singkat</th>
+                  <th>Nama Lengkap</th>
+                  <th>Pembina</th>
+                  <th>Ketua Himpunan</th>
+                  <th>Logo</th>
+                  <th>Filosofi Logo</th>
+                  <th>Kode Warna</th>
+                  <th>Tahun Berdiri</th>
+                  <th>More</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($himpunans as $himpunan )
+                <tr>
+                  <td>1</td>
+                  <td>HMIF</td>
+                  <td>Himpunan Mahasiswa Informatika</td>
+                  <td>Fitra Sindi</td>
+                  <td>Fitra Ilyasa</td>
+                  <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
+                  <td>{{Str::limit($himpunan->filosofiLogo, 10)}}</td>
+                  <td>{{Str::limit($himpunan->kodeWarna, 10)}}</td>
+                  <td>{{$himpunan->tahunBerdiri}}</td>
+                  <td class="manage-row">
+                    <a href="{{route('dashboard.himpunan.edit', ['himpunan' => $himpunan->ormawas])}}" class="edit-button">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                    <a role="button" class="delete-button" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm{{$himpunan->ormawas->id}}">
+                      <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                    <div class="modal fade bd-example-modal-sm{{$himpunan->ormawas->id}}" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title"><strong>Hapus Data</strong></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                            </button>
+                          </div>
+                          <div class="modal-body">Apakah anda yakin ingin menghapus data?</div>
+                          <div class="modal-footer">
+                            <form action="{{route('dashboard.himpunan.destroy', $himpunan->ormawas->id)}}" method="POST">
+                              @method('DELETE')
+                              @csrf
+                              <input type="submit" class="btn btn-danger light" name="" id="" value="Hapus">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tidak</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                @endforeach
+              </tbody>
+              {{-- link paginate --}}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--./Read & Delete Data-->
+
+    <!--Update Data-->
+    <div class="col-lg-12col-lg-12 form-wrapper">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Kelola Data Himpunan</h4>
         </div>
         <div class="card-body">
           @if (Auth::user()->roles_id == '1')
@@ -620,6 +793,8 @@
         </div>
       </div>
     </div>
+    <!--/.Update Data-->
+    
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

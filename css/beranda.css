@@ -24,6 +24,9 @@
     --page-background-1: #F9FAFB;
     --page-background-2: #f6f6f6;
 }
+a {
+    text-decoration: none;
+}
 
 body {
     background-image: url(../assets/bacground-2.png);

@@ -41,19 +41,38 @@ body {
 
 .games-display {
     position: absolute;
-}
+    overflow: auto;
+    margin: auto;
+    top: 410px;
 
-.btn-get-started {
-    width: 31%;
-    height: 18%;
-
-    margin-top: 41%;
-    margin-left: 0.6%;
-    padding-top: 1.8%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 250%;
+    font-size: 64px;
+    line-height: 87px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+.btn-get-started {
+    position: absolute;
+    width: 556px;
+    height: 120px;
+    /*
+    margin-top: 41%;
+    margin-left: 0.6%;*/
+
+    overflow: auto;
+    margin: auto;
+    top: 694px;
+    padding-top: 23px; 
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
     line-height: 68px;
     /* identical to box height */
 
@@ -464,16 +483,11 @@ body {
 
     .games-display {
         top: 410px; left: 0; bottom: 0; right: 0;
-        
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 87px;
-        text-align: center;
-        letter-spacing: 0.1em;
+    }
 
-        color: #FFFFFF;
+    .btn-get-started {
+        top: 540px;
+
     }
 }
 

@@ -128,7 +128,7 @@ img{
 p{
     line-height: 1em;
     text-align: center;
-    color: #fff !important;
+    color: #fff;
     font-size: large;
     padding-left: 5%;
     padding-right: 5%;
@@ -144,7 +144,8 @@ h5{
 h3 {
     line-height: 1em;
     text-align: center;
-    color: #fff !important;
+    color: var(--gradient-1) !important;
+    color: var(--bawaan-gradient-1) !important;
     font-size: large;
     padding-bottom: 3%;
 }
@@ -241,8 +242,7 @@ h2{
     margin-bottom: 3%;
 }
 .card-body{
-    background-color: var(--gradient-2);
-    background-color: var(--bawaan-gradient-2);
+    background-color: var(--white);
     text-align: center;
     margin: 0; 
     border: 10px solid gray;
@@ -305,6 +305,7 @@ h2{
 .fun-fact-card .card-body-ff .card-title {
     overflow: hidden;
     text-align: center;
+    color: var(--white);
 }
 
 .fun-fact-card .card-body-ff .card-title:before,

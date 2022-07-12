@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 :root {
     --primary: #7739A3;
@@ -40,6 +41,7 @@ body {
     
 }
 
+
 .modal-dialog .modal-content{
     border-radius: 25px!important;
     background-color: var(--page-background-2);
@@ -56,6 +58,7 @@ body {
     background-image: url(../assets/Rectangle.png);
     background-size: cover;
     background-position: 50% 0%;
+    transform: translateY(-4.5rem);
     /* box-shadow:rgba(50,25,67,1) 0px 50px 10px; */
     
 }
@@ -195,31 +198,56 @@ body {
 .canvas{
     width: 100%;
 }
+.text-style{
+    font-family:"Passion One";
+}
 
-.carousel-contaner{
+.text-gradien{
+    background: var(--bawaan-gradient-1);
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.carousel-container{
     border-radius: 8px;
-    height: 21rem;
+    /* height: 21rem; */
     padding: 0px;
     box-shadow: #000000 0px 0px 10px;
     background: var(--bawaan-gradient-1);
     background: var(--gradient-1);
 }
-.carousel-card{
-    margin: 10px 0px;
-    width: 100%;
-    height: 18rem;
-    border-radius: 15px;
-    /* background-size: cover; */
-    /* box-shadow: #000000 0px 0px 10px; */
-}
+
 
 .item{
     transform: scale(0.85);
 }
 
+.img-fit {
+    /* height: 17rem; */
+    /* object-position: % 50%; */
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    /* z-index: -999; */
+}
+.img-fit button{
+    transform: scale(1.2);
+}
+.thumbnail{
+    position:relative;
+}
+.play-btn {
+    font-size: 2.5rem;
+    position: absolute;
+    text-shadow: black 0px 0px 20px;
+    top: 34%;
+    left: 42%;
+    z-index: 999;
+}
 .active .item{
     transform: scale(1);
-    z-index: 999;
 
 }
 .begalin-container{
@@ -336,15 +364,7 @@ body {
           transform: translateY(0px);
       }
       
-      .carousel-card{
-          height: 9rem;
-      }
-      .carousel-contaner{
-          height: 12rem;
-      }
-      /* .maskot-awal{
-          padding-top: 20px;
-      } */
+
   
       .maskot {
           width: 100%;
@@ -402,13 +422,7 @@ body {
         margin-top:20px!important; ;
         /* padding */
     }
-    .carousel-card{
-        height: 9rem;
-        box-shadow: #000000 0px 0px 7px;
-    }
-    .carousel-contaner{
-        height: 12rem;
-    }
+
 
     .maskot {
         display: none;

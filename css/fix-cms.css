@@ -93,6 +93,18 @@ body {
 }
 
 @media screen and (max-width:290px) {
+    #judul-pplk{
+        display: none;
+    }
+    aside.control-sidebar{
+        width: 50%;
+    }
+    aside .p-3 h5{
+        font-size: 0.8rem;
+    }
+    aside .p-3 a{
+        font-size: .7rem;
+    }
     #icon-fullscreen{
         display:none;
     }

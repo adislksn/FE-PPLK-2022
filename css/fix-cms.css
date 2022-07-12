@@ -79,6 +79,9 @@ body {
 }
 
 /* Left Sidebar*/
+.tablinks, .tabitem{
+    cursor: pointer;
+}
 #left-sidebar{
     background: var(--bawaan-gradient-3);
     background: var(--gradient-3);

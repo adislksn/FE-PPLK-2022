@@ -35,6 +35,10 @@ body{
     background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
 }
 
+p{
+    color: var(--font-color-subheadline);
+}
+
 /*Navbar CSS*/
 .background-gradient{
     background: var(--bawaan-gradient-1);
@@ -453,10 +457,13 @@ body{
 #popup-27:hover{
     background: rgba(0, 0, 0, 0.5);
 }
+.list-card {
+    margin-bottom: 8rem;
+}
 #full-kamus {
     width: 24rem;
     max-height: 40rem;
-    background: var(--grey);
+    background: var(--white);
     border-radius: 1rem;
     position: relative;
     padding: 1rem;
@@ -486,6 +493,14 @@ body{
 }
 .fa-circle-xmark {
     size: 5rem;
+}
+.col {
+    margin: 1rem;
+}
+#socmed {
+    text-decoration: none;
+    padding: 1rem;
+    background: #110f58;
 }
 
 #popup-1:target {
@@ -571,6 +586,9 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    .list-card {
+        margin-bottom: 8rem;
+    }
     #btn-kamus {
         margin: 1.2rem;
         overflow-x: hidden;
@@ -644,6 +662,9 @@ body{
 }
 
 @media screen and (max-width:340px) {
+    .list-card {
+        margin-bottom: 4rem;
+    }
     #search-width{
         display: none;
     }

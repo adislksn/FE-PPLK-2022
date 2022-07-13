@@ -770,6 +770,278 @@
     </div>
     <!--./Himpunan-->
 
+    <!--UKM/Komunitas-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-ukm">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Input Data UKM/Komunitas</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+        @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Pembina</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Nama Pembina" name="namapembina" id="namapembina" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Ketua Umum</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Ketua Umum" name="ketuaumum" id="ketuaumum" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Dies Natalis</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Dies Natalis" name="diesnatalis" id="diesnatalis" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Logo</label>
+            <div class="col-sm-9">
+              <input type="file" accept="image/*" class="form-control" name="logo" id="logo" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Filosofi Logo</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area" placeholder="Filosofi Logo" name="filosofiLogo" id="filosofiLogo"  ></textarea>
+            </div>
+          </div>                                    
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">QR-Code</label>
+            <div class="col-sm-9 ">
+              <input type="text" class="form-control" placeholder="Input https://linktr.ee" name="qrcode" id="qrcode" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Dokumentasi 1</label>
+            <div class="col-sm-9">
+              <input type="file" accept="image/*" class="form-control" name="dukum1" id="dokum1" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Dokumentasi 2</label>
+            <div class="col-sm-9">
+              <input type="file" accept="image/*" class="form-control" name="dokum2" id="dokum2" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Dokumentasi 3</label>
+            <div class="col-sm-9">
+              <input type="file" accept="image/*" class="form-control" name="dokum3" id="dokum3" >
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./UKM/Komunitas-->
+
+    <!--Funfact-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-funfact">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Input Funfact</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+        @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Deskripsi</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="deskripsi" id="deskripsi " required></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./Funfact-->
+
+    <!--Begalin-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-begalin">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Input Data Begalin</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+        @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Artikel Singkat</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area" placeholder="Artikel Singkat..." name="singkat" id="singkat" required></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Artikel Lengkap</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area" placeholder="Artikel Lengkap" name="lengkap" id="lengkap" required></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./Begalin-->
+
+    <!--Kamus Gaul-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-kamus">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Input Data Kamus Gaul</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+        @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Kamus Gaul</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area" placeholder="Kamus Gaul" name="kamus" id="kamus" required></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Arti Kamus</label>
+            <div class="col-sm-9">
+              <textarea class="form-control custom-txt-area" placeholder="Arti Kamus" name="arti-kamus" id="arti-kamus" required></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./Kamus Gaul-->
+    
+    <!--Games redeem code-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-redeem">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Input Data Redeem Code</h4>
+        </div>
+        <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+        @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Nama</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Input nama item" name="namaitem" id="namaitem" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Kode</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Kode item" name="Kode item" id="Kode item" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Nilai</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Nilai point item" name="nilaiitem" id="nilaiitem" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./Games redeem code-->
+
+    <!--Games Tebak-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-tebak">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="card-title">Input Data Tebak Bangunan</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+          @csrf
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Nama</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Input nama item" name="namaitem" id="namaitem" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Kode</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Kode item" name="Kode item" id="Kode item" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Nilai</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" placeholder="Nilai point item" name="nilaiitem" id="nilaiitem" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-9">
+              <button type="submit" class="btn btn-primary ">Tambah</button>
+            </div>
+          </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./Games Tebak-->
+    
+    <!--Booklet-->
+    <div class="col-lg-12 col-lg-12 form-wrapper tabcontents" id="tambah-booklet">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Input Data Booklet</h4>
+        </div>
+        <div class="card-body">
+          <form method="POST" action="{{ route('dashboard.himpunan.store') }}" enctype='multipart/form-data'>
+          @csrf
+            <div class="mb-3 row">
+              <label class="col-sm-3 col-form-label">Judul Booklet</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Judul Booklet" name="judulbooklet" id="judulbooklet" required>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-3 col-form-label">Deskripsi Booklet</label>
+              <div class="col-sm-9">
+                <textarea class="form-control custom-txt-area" placeholder="Deskripsi Booklet..." name="deskripsibooklet" id="deskripsibooklet" required></textarea>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <div class="col-sm-9">
+                <button type="submit" class="btn btn-primary ">Tambah</button>
+              </div>
+            </div>
+          </form>			
+        </div>
+      </div>
+    </div>
+    <!--./Booklet-->
+
     <!--./Create Data-->
 
     <!--Read & Delete Data-->
@@ -1486,12 +1758,8 @@
                   <td>Fitra lagi</td>
                   <td>dies natalis</td>
                   <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
-                  <td>Visi</td>
-                  <td>Misi</td>
-                  <td>Teks filosofi</td>
-                  <td>https://linktr.ee/qr-code</td>
-                  <td>https://youtu.be</td>
-                  <td>https://instagram.com</td>
+                  <td>Filosofi</td>
+                  <td>aw32#$@aiwjd543</td>
                   <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
                   <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
                   <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>

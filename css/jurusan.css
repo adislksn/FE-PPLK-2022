@@ -12,11 +12,6 @@
   background-position: center;
 }
 
-#pills-tab {
-  background: rgb(11, 10, 60);
-  background: linear-gradient(90deg, rgba(11, 10, 60, 1) 0%, rgba(50, 25, 67, 1) 100%);
-}
-
 #pills-tab .nav-item .active {
   background: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130, 165, 234, 1) 100%) !important;
 }

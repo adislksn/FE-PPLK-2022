@@ -7,6 +7,7 @@
 .upt-card {
   width: 90%;
   background: linear-gradient(90deg, rgb(240, 65, 255) 0%, rgba(130, 165, 234, 1) 100%) !important;
+  height: 20rem;
 }
 
 .owl-dots .active {

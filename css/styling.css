@@ -24,9 +24,14 @@
     --page-background-2: #f6f6f6; 
 }
 body{
-    padding-bottom: 500px;
-    background: rgb(11,10,60);
-    background: linear-gradient(90deg, rgba(11,10,60,1) 0%, rgba(50,25,67,1) 100%);
+    background-image: url(../assets/bacground-2.png);
+    background-size: cover;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 6rem;
+    box-shadow: inset rgba(41, 1, 53, 0.66) 0px 1000rem 100px;
+    width: 100%;
 }
 .card{
     background-color: rgba(255, 255, 255, 0.212)!important;
@@ -123,7 +128,7 @@ img{
 p{
     line-height: 1em;
     text-align: center;
-    color: #fff !important;
+    color: #fff;
     font-size: large;
     padding-left: 5%;
     padding-right: 5%;
@@ -139,7 +144,8 @@ h5{
 h3 {
     line-height: 1em;
     text-align: center;
-    color: #fff !important;
+    color: var(--gradient-1) !important;
+    color: var(--bawaan-gradient-1) !important;
     font-size: large;
     padding-bottom: 3%;
 }
@@ -217,6 +223,9 @@ h2{
     margin: 0;
     
 }
+.booklet-text{
+    transform: translateY(-20rem);
+}
 .card-booklet{
     width: 100%;
     height: 20rem;
@@ -224,7 +233,7 @@ h2{
 }
 .card-booklet svg, .card-booklet svg path{
     width: 100%;
-    height: 30rem;
+    height: 23rem;
     align-items: center;
 }
 .card-booklet h1{
@@ -233,8 +242,7 @@ h2{
     margin-bottom: 3%;
 }
 .card-body{
-    background-color: var(--gradient-2);
-    background-color: var(--bawaan-gradient-2);
+    background-color: var(--white);
     text-align: center;
     margin: 0; 
     border: 10px solid gray;
@@ -254,10 +262,11 @@ h2{
     padding-right: 30px;
 }
 .slide{
-    margin-top: 30%;
     margin-left: 12%;
     margin-right: 12%;
+    margin-top: 2.5rem;
     align-items: center;
+    border-radius: 28px;
 }
 .fun-fact-card{
     background:var(--bawaan-gradient-1);
@@ -266,8 +275,11 @@ h2{
     padding-right: 40px;
     height: 260px;
     width: 100%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
+}
+.carousel-control{
+    background: none !important;
 }
 .fun-fact-card .card-body-ff{
     justify-content: center;
@@ -288,11 +300,12 @@ h2{
     font-family: var(--font-family-body);
     font-size: 18px;
     width: 80%;
-    margin-left: 1%;
+    /* margin-left: 1%; */
 }
 .fun-fact-card .card-body-ff .card-title {
     overflow: hidden;
     text-align: center;
+    color: var(--white);
 }
 
 .fun-fact-card .card-body-ff .card-title:before,
@@ -314,4 +327,13 @@ h2{
 .fun-fact-card .card-body-ff .card-title:after {
     left: 0.5em;
     margin-right: -50%;
+}
+
+@media screen and (max-width: 700px) {
+    .fun-fact-card{
+
+        margin-top: 0rem;
+    
+    }
+    
 }

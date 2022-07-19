@@ -95,6 +95,59 @@ body {
     color: white;
 }
 
+table{
+    border-collapse:collapse;
+    border:2px solid #000000;
+    width:100%
+}
+table td{
+    border:2px solid #000000;
+}
+table th{
+    text-align: center;
+    margin:1px;
+    border:2px solid #000000;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    }
+
+@media (max-width: 575.98px) {
+    .table-responsive-sm {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        } 
+    }
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        } 
+    }
+@media (max-width: 991.98px) {
+    .table-responsive-lg {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        } 
+    }
+@media (max-width: 1199.98px) {
+    .table-responsive-xl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        } 
+    }
+@media (max-width: 1439.98) {
+    .table-responsive-xxl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        } 
+    }
+    .form-label {
+        margin-bottom: 0.5rem; 
+    }
+
 @media screen and (max-width:290px) {
     #judul-pplk{
         display: none;

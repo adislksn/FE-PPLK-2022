@@ -249,7 +249,6 @@ h2{
     border-radius: 10px;
 }
 .booklet{
-    background-image: url(/assets/pplk.png);
     background-size: cover;
     background-position:50% 0%;
     background-repeat: no-repeat;

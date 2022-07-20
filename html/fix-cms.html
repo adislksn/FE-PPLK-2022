@@ -1460,7 +1460,7 @@
     
     <!--Tabel Prodi-->
     
-    <div class="col-lg-12col-lg-12 form-wrapper tabcontents" style="display: none;" id="kelola-prodi">
+    <div class="col-lg-12col-lg-12 form-wrapper tabcontents" style="overflow-x:hidden; display: none;" id="kelola-prodi">
       <div class="card">
         <div class="card-header">
           <h4 class="card-title">Kelola Data Prodi</h4>
@@ -1480,160 +1480,85 @@
             <div class="panel-heading border">    
             </div>
           <div class="panel-body">
-                <table class="table table-bordered bordered table-striped table-condensed datatable" ui-jq="dataTable" ui-options="dataTableOpt">
+                <table class=" table-responsive table table-bordered bordered table-striped table-condensed datatable" ui-jq="dataTable" ui-options="dataTableOpt">
                 <thead>
                   <tr>
-                    <th>#</th>
-                    <th>Nama</th>
+                    <th>No</th>
+                    <th>Nama Prodi</th>
                     <th>Kepala Prodi</th>
                     <th>Akreditasi</th>
                     <th>Ruang Prodi</th>
                     <th>Tahun Berdiri</th>
+                    <th>Jumlah Mahasiswa</th>
+                    <th>Visi</th>
+                    <th>Misi</th>
+                    <th>Logo</th>
+                    <th>Tentang Kami</th>
+                    <th>Prestasi 2020</th>
+                    <th>Prestasi 2021</th>
+                    <th>Prestasi 2022</th>
+                    <th>More</th>
                   </tr>
                 </thead>
                   <tbody>
-                    <tr ng-repeat="n in data">
-                      <td>{{$index+1}}</td>
-                      <td>{{n[0]}}</td>
-                      <td>{{n[1]}}</td>
-                      <td>{{n[2]}}</td>
-                      <td>{{n[3]}}</td>
-                      <td>{{n[4] | date:'dd/MM/yyyy'}}</td>
+                    <tr>
+                      <td>1</td>
+                      <td>Teknik Informatika</td>
+                      <td>Fitra Ilyasa S.Kom, Masuk.Baskom</td>
+                      <td>A</td>
+                      <td>Gedung C Lt.2</td>
+                      <td>2030</td>
+                      <td>3.212</td>
+                      <td>Visi</td>
+                      <td>Misi</td>
+                      <td><img src="" width="100" height="100"/></td>
+                      <td>About Us</td>
+                      <td>
+                        -bangun reaktor nuklir
+                        -hacker handal
+                      </td>
+                      <td>
+                        -Cabang Apple bagian Sumatera
+                        -Cabang Microsoft bagian Sumatera
+                      </td>
+                      <td>
+                        -Joki tes karyawan google
+                      </td>
+                      <td class="manage-row">
+                        <a href="" class="edit-button">
+                          <i class="fa-solid fa-marker"></i>
+                        </a>
+                        <!-- Button trigger modal -->
+                        <a role="button" class="delete-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel"><strong>Hapus Data</strong></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                Anda yakin menghapus data?
+                              </div>
+                              <div class="modal-footer">
+                                <form action="" method="POST">
+                                <input type="submit" class="btn btn-danger light" name="" id="" value="Hapus">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tidak</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
               </table>
             </div>
             </div>
           </div>
-          <div class="table-responsive">
-            <table id="example4" class="display" style="min-width: 845px">
-              <thead>
-                <tr>
-                  <th>No</th>
-                  <th>Nama Prodi</th>
-                  <th>Kepala Prodi</th>
-                  <th>Akreditasi</th>
-                  <th>Ruang Prodi</th>
-                  <th>Tahun Berdiri</th>
-                  <th>Jumlah Mahasiswa</th>
-                  <th>Visi</th>
-                  <th>Misi</th>
-                  <th>Logo</th>
-                  <th>Tentang Kami</th>
-                  <th>Prestasi 2020</th>
-                  <th>Prestasi 2021</th>
-                  <th>Prestasi 2022</th>
-                  <th>More</th>
-                </tr>
-              </thead>
-          <tbody>
-                @foreach ($himpunans as $himpunan )
-                <tr>
-                  <td>1</td>
-                  <td>Teknik Informatika</td>
-                  <td>Fitra Ilyasa S.Kom, Masuk.Baskom</td>
-                  <td>A</td>
-                  <td>Gedung C Lt.2</td>
-                  <td>2030</td>
-                  <td>3.212</td>
-                  <td>Visi</td>
-                  <td>Misi</td>
-                  <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
-                  <td>About Us</td>
-                  <td>
-                    -bangun reaktor nuklir
-                    -hacker handal
-                  </td>
-                  <td>
-                    -Cabang Apple bagian Sumatera
-                    -Cabang Microsoft bagian Sumatera
-                  </td>
-                  <td>
-                    -Joki tes karyawan google
-                  </td>
-                  <td class="manage-row">
-                    <a href="{{route('dashboard.himpunan.edit', ['himpunan' => $himpunan->ormawas])}}" class="edit-button">
-                      <i class="fa-solid fa-marker"></i>
-                    </a>
-                    <!-- Button trigger modal -->
-                    <a role="button" class="delete-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel"><strong>Hapus Data</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            Anda yakin menghapus data?
-                          </div>
-                          <div class="modal-footer">
-                            <input type="submit" class="btn btn-danger light" name="" id="" value="Hapus">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tidak</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Teknik Informatika</td>
-                  <td>Fitra Ilyasa S.Kom, Masuk.Baskom</td>
-                  <td>A</td>
-                  <td>Gedung C Lt.2</td>
-                  <td>2030</td>
-                  <td>3.212</td>
-                  <td>Visi</td>
-                  <td>Misi</td>
-                  <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
-                  <td>About Us</td>
-                  <td>
-                    -bangun reaktor nuklir
-                    -hacker handal
-                  </td>
-                  <td>
-                    -Cabang Apple bagian Sumatera
-                    -Cabang Microsoft bagian Sumatera
-                  </td>
-                  <td>
-                    -Joki tes karyawan google
-                  </td>
-                  <td class="manage-row">
-                    <a href="{{route('dashboard.himpunan.edit', ['himpunan' => $himpunan->ormawas])}}" class="edit-button">
-                      <i class="fa-solid fa-marker"></i>
-                    </a>
-                    <!-- Button trigger modal -->
-                    <a role="button" class="delete-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel"><strong>Hapus Data</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            Anda yakin menghapus data?
-                          </div>
-                          <div class="modal-footer">
-                            <input type="submit" class="btn btn-danger light" name="" id="" value="Hapus">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tidak</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                @endforeach
-              </tbody>
-              {{-- link paginate --}}
-            </table>
           </div>
         </div>
       </div>
@@ -1776,9 +1701,9 @@
                   <td>https://youtube/linkperkenalanKM.com</td>
                   <td>Visi</td>
                   <td>Misi</td>
-                  <td><img src="{{$himpunan->logo}}" widht="100" height="100"/></td>
+                  <td><img src="" widht="100" height="100"/></td>
                   <td class="manage-row">
-                    <a href="{{route('dashboard.himpunan.edit', ['himpunan' => $himpunan->ormawas])}}" class="edit-button">
+                    <a href="" class="edit-button">
                       <i class="fa-solid fa-marker"></i>
                     </a>
                     <a role="button" class="delete-button" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm{{$himpunan->ormawas->id}}">
@@ -1794,7 +1719,7 @@
                           </div>
                           <div class="modal-body">Apakah anda yakin ingin menghapus data?</div>
                           <div class="modal-footer">
-                            <form action="{{route('dashboard.himpunan.destroy', $himpunan->ormawas->id)}}" method="POST">
+                            <form action="" method="POST">
                               @method('DELETE')
                               @csrf
                               <input type="submit" class="btn btn-danger light" name="" id="" value="Hapus">

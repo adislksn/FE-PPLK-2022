@@ -2444,8 +2444,8 @@
           <h4 class="card-title">Kelola Data Prodi</h4>
         </div>
         <div class="card-body">
-          @if (Auth::user()->roles_id == '1')
-          <form method="POST" action="{{ route('dashboard.himpunan.update', $himpunan->id) }}" enctype='multipart/form-data'>
+          @if ()
+          <form method="POST" action="" enctype='multipart/form-data'>
             @else
             @if (session('sukses'))
             <div class="alert alert-success">
@@ -2456,7 +2456,7 @@
               {{ session('error') }}
             </div>
             @endif
-            <form method="POST" action="{{ route('dashboardOrmawa.himpunan.update', $himpunan->id) }}" enctype='multipart/form-data'>
+            <form method="POST" action="" enctype='multipart/form-data'>
               @endif
     
               @method('PUT')
@@ -2502,32 +2502,32 @@
               <div class="mb-3 row">
                 <label class="col-sm-3 col-form-label">Visi</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" placeholder="Visi" name="visi" id="visi" value="{{ $himpunan->visimisis->visi }}" disabled>
+                  <input type="text" class="form-control" placeholder="Visi" name="visi" id="visi" value="visi" disabled>
                 </div>
               </div>
               <div class="mb-3 row">
                 <label class="col-sm-3 col-form-label">Misi</label>
                 <div class="col-sm-9">
-                  <textarea class="form-control custom-txt-area misi" placeholder="Misi" name="misi" id="misi" rows="4" disabled>{{ $himpunan->visimisis->misi }}</textarea>
+                  <textarea class="form-control custom-txt-area misi" placeholder="Misi" name="misi" id="misi" rows="4" disabled>misi</textarea>
                 </div>
               </div>
               <div class="mb-3 row">
                 <label class="col-sm-3 col-form-label">Logo</label>
-                <img class="img-thumbnail w-25" src="{{ $dataHimpunan->logo ?? asset('assets/images/LogoItera.png') }}" alt="" height="300" width="300">
+                <img class="img-thumbnail w-25" src="" alt="" height="300" width="300">
                 <div class="col-sm-6">
-                  <input type="file" accept="image/*" class="form-control" name="logo" id="logo" value="{{ $dataHimpunan->logo }}" disabled>
+                  <input type="file" accept="image/*" class="form-control" name="logo" id="logo" value="" disabled>
                 </div>
               </div>
               <div class="mb-3 row">
                 <label class="col-sm-3 col-form-label">Filosofi Logo</label>
                 <div class="col-sm-9">
-                  <textarea type="text" class="form-control" placeholder="Filosofi Logo" name="filosofiLogo" id="filosofiLogo" disabled>{{ $dataHimpunan->filosofiLogo }}</textarea>
+                  <textarea type="text" class="form-control" placeholder="Filosofi Logo" name="filosofiLogo" id="filosofiLogo" disabled>filosofi logo</textarea>
                 </div>
               </div>
               <div class="mb-3 row">
                 <label class="col-sm-3 col-form-label">Deskripsi</label>
                 <div class="col-sm-9 ">
-                  <textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="deskripsi" id="deskripsi" rows="4" disabled>{{ $himpunan->artikels->body }}</textarea>
+                  <textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="deskripsi" id="deskripsi" rows="4" disabled>deskripsi</textarea>
                 </div>
               </div>
               

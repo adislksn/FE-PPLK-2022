@@ -27,6 +27,12 @@
 }
 
 body{
+    background-image: url(../assets/bacground-2.png);
+    background-size: cover;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset rgba(41, 1, 53, 0.66) 0px 1000rem 100px;
     margin: 0;
     padding: 0;
     display: block;
@@ -227,6 +233,11 @@ body{
 }
 
 /*Navbar mobile alias footbar CSS*/
+li a svg.active{
+    transform: translateY(-13px);
+    fill: var(--gradient-1);
+}
+
 .footer-bar{
     background:var(--bawaan-gradient-1);
     background: var(--gradient-1);
